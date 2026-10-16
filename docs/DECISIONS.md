@@ -1,16 +1,16 @@
 # Decision register
 
-Updated 2026-10-16. The project brief is a starting hypothesis. “Proposed” means not yet approved by Suleyman; publication of these notes does not approve implementation.
+Updated 2026-10-16. The project brief is a starting hypothesis. “Proposed” means not yet approved by Suleyman. The later bounded homepage assignment authorizes M1 below; it does not approve all launch decisions.
 
 | ID | Status | Direction | Reason / consequence |
 | --- | --- | --- | --- |
-| D01 | Confirmed user constraint | Planning and documentation only for this assignment | No frontend scaffold, package installation, site implementation, or deployment |
+| D01 | Superseded for M1 only | Original planning-only hold lifted for the explicitly requested grayscale homepage | Full site, finalized claims, merge, and deployment remain outside scope |
 | D02 | Confirmed brief constraint | Preserve old portfolio; use GitHub for shared review | Audit old source read-only; review proposed changes through branches/PRs |
 | D03 | Confirmed brief constraint | Evidence must support claims; distinguish completed work from proposals | Research provenance and personal contribution must be checked before publication |
-| D04 | Proposed | Static Astro site with TypeScript and Markdown content collections | Content-heavy hiring journey benefits from HTML-first pages and validated content; React islands only if a specific interaction warrants them |
-| D05 | Proposed | Scoped CSS and CSS custom properties for initial tokens | Keep content/layout simple; add Tailwind only if the team prefers that authoring model. No motion library by default |
+| D04 | Approved for M1 | Static Astro site with TypeScript and Markdown content collections | Explicitly requested in the latest assignment; no React dependency needed for the homepage |
+| D05 | M1 implementation choice; long-term choice proposed | Plain CSS and CSS custom properties | Reversible grayscale implementation; no Tailwind or motion library added |
 | D06 | Proposed | Git-managed content; no CMS, database, login, or API in initial scope | Current brief is a public portfolio, with no established authenticated or dynamic requirement |
-| D07 | Proposed | Home, Work, About, Resume, Contact; case studies at /work/[slug]/ | Start from the brief, then validate labels and grouping with hiring tasks; keep navigation small |
+| D07 | Partially approved for M1 | Navigation Work, About, Resume, Contact; homepage Hero → Selected Work → Design Approach → About → Contact | Same-page anchors in M1; separate pages and case-study routes remain proposed |
 | D08 | Proposed | D2L as conditional flagship; supporting projects chosen by evidence | Do not fill arbitrary slots or turn future AI work into past experience |
 | D09 | Proposed | Static Pages hosting candidate; domain cutover deferred | Existing site/domain remains operational during planning. Final host depends on preview, URL, and contact needs |
 
@@ -27,3 +27,11 @@ Suleyman relayed ChatGPT's review of PR #1: ChatGPT supports the documentation s
 Confirmed priority: project evidence, attribution, and accurate resume information come before implementation. Evidence provenance is a first-class part of the case-study content model. No code or dependency changes are authorized by this checkpoint.
 
 Completed: initial source/evidence audit, live homepage reference check, and publication of the planning docs in PR #1. Next: gather owner answers and source artifacts for the P0 questions in OPEN_QUESTIONS.md.
+
+## Approved homepage checkpoint — 2026-10-16
+
+Suleyman explicitly approved primary positioning as UX / Product Designer; 80% Editorial Minimalism / 20% Technical Precision; light-first with optional dark mode; the hierarchy and navigation in D07; large type, generous whitespace, restrained colors, precise alignment, authentic artifacts, and accessible responsive keyboard interaction. This approval authorizes a low-fidelity homepage on a separate implementation branch and draft PR. It does not approve D08, D09, claims, artifact reuse, or production launch. Earlier planning-only checkpoints remain historical context.
+
+M1 choices: Astro 7.4.0, TypeScript, schema-backed Markdown collections, Node 24.19.0, pnpm 11.25.0 with committed lockfile (available local runtime; replaces the proposed npm choice), standard static HTML and no React, system fonts and grayscale CSS, no backend, no analytics, no deployment workflow. Header links target existing homepage sections. Theme starts light regardless of OS; an explicit choice persists when storage is available. No-JavaScript mode retains core navigation and native disclosures.
+
+Implementation review is stacked on docs/portfolio-discovery (PR #1), which remains open/draft. The new draft PR targets that branch to isolate implementation changes; after planning merges, retarget to main and recheck the diff. Do not merge either PR without owner review.

@@ -1,6 +1,6 @@
 # Proposed architecture and first milestone
 
-Status: proposal for Suleyman and ChatGPT review, 2026-10-16. No implementation authorized by this document.
+Status: initial proposal, 2026-10-16. The later user assignment authorizes the bounded Astro/TypeScript grayscale homepage described in [IMPLEMENTATION_M1.md](IMPLEMENTATION_M1.md). Other architecture/content/hosting decisions remain proposed. Earlier planning and acceptance sections below describe the broader site, not a blocker to this explicitly authorized prototype.
 
 ## Recommended shape
 

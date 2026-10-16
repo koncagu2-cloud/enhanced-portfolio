@@ -1,0 +1,15 @@
+---
+import { getCollection, render } from 'astro:content';
+import SectionHeading from './SectionHeading.astro';
+import ProjectRow from './ProjectRow.astro';
+// Review entries appear only on this explicitly provisional, noindex homepage.
+// Drafts are omitted. No case-study routes are generated in this milestone.
+const projects = await getCollection('projects', ({ data }) => data.publicationStatus === 'review');
+projects.sort((a, b) => a.data.order - b.data.order);
+const entries = await Promise.all(projects.map(async (project) => ({ project, ...await render(project) })));
+---
+<section id="work" class="section" aria-labelledby="work-heading">
+  <SectionHeading number="01" title="Selected work" id="work-heading" note="Selection in progress" />
+  <p class="section-intro">A working shortlist. These projects are candidates for the portfolio, with evidence and attribution still under review.</p>
+  <div class="project-list">{entries.map(({ project, Content }, i) => <ProjectRow project={project} number={i + 1}><Content /></ProjectRow>)}</div>
+</section>

@@ -1,0 +1,19 @@
+---
+import type { CollectionEntry } from 'astro:content';
+interface Props { project: CollectionEntry<'projects'>; number: number }
+const { project, number } = Astro.props;
+const { data } = project;
+---
+<article class="project-row" aria-labelledby={`project-${project.id}`}>
+  <span class="micro project-index" aria-hidden="true">{String(number).padStart(2, '0')}</span>
+  <div class="project-main">
+    <p class="micro">{data.category}</p>
+    <h3 id={`project-${project.id}`}>{data.title}</h3>
+    <p>{data.provisionalSummary}</p>
+    <details>
+      <summary>What’s still under review?</summary>
+      <div class="review-details"><slot /></div>
+    </details>
+  </div>
+  <div class="project-status"><span class="status-label">Provisional candidate</span><p>Artifact withheld<br />pending verification.</p><span class="micro">Case study not published</span></div>
+</article>

@@ -25,3 +25,29 @@ Show how research, information architecture, accessible interaction design, and 
 7. Validate accessibility, usability, performance, and content accuracy.
 
 The previous portfolio remains available as a reference while this version is developed.
+
+## Grayscale homepage study (M1)
+
+This branch adds a provisional Astro + TypeScript homepage for review. Project narratives, artifacts, resume facts, and final contact details remain under review. There is no deployment configuration or change to the existing live site.
+
+Use Node 24.19.0 (see `.node-version`) and pnpm 11.25.0:
+
+```sh
+pnpm install --frozen-lockfile
+pnpm run dev
+```
+
+Validation and production preview:
+
+```sh
+pnpm run check
+pnpm run test:content
+pnpm run build
+pnpm exec playwright install chromium
+pnpm run test
+pnpm run preview
+```
+
+Browser tests run against the built output and start/stop their own preview server on port 4322. Rebuild after changing source. The test suite covers keyboard interaction, responsive overflow, theme persistence/storage failures, no-JavaScript use, and automated accessibility checks; it is not a full accessibility certification.
+
+See [M1 implementation notes](docs/IMPLEMENTATION_M1.md) for components, layout/theme rules, unresolved decisions, and validation results. Evidence provenance lives with the Markdown project records; the schema cannot replace source verification or permission review. `noindex` is an indexing hint, not access control. This repository and everything committed to it are public.

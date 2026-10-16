@@ -1,0 +1,28 @@
+---
+import '../styles/global.css';
+import { site } from '../data/site';
+interface Props { title?: string }
+const { title = `${site.name} — ${site.role} / provisional homepage` } = Astro.props;
+---
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A provisional, low-fidelity portfolio homepage for design review. Project evidence and resume details remain under review." />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{title}</title>
+    <script is:inline>
+      // Light-first. Only an explicit saved choice enables dark mode.
+      try {
+        if (localStorage.getItem('portfolio-theme') === 'dark') {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      } catch { /* Storage may be unavailable; the light default remains usable. */ }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <slot />
+  </body>
+</html>
