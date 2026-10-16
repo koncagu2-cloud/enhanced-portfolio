@@ -56,6 +56,22 @@
         "originalSha256": "5a3e04a2187fbbae4d698beadf7b8eaa6d691aeb501cce03a620dfc467e6efab",
         "extraction": "Original team sketch collage; WebP web encoding only, no cropping, redrawing, or rearrangement"
       }
+    },
+    "src/assets/community-spaces/event-details-hi-fi.png": {
+      "sha256": "63b0cb73063b192f505bcc3dde66ecc4ae144820d48c27e2ae538e047ebd9632",
+      "source": {
+        "fileKey": "pWjqzjZD2HgayCk6pQg3Zk",
+        "nodeId": "214:167",
+        "extraction": "Original frame PNG export at 1x, 393\u00d7852; no cropping, redrawing, or design changes"
+      }
+    },
+    "src/assets/community-spaces/reserve-spot-hi-fi.png": {
+      "sha256": "d2d17e79872693f4a6d0787542eedbc6262f5ca4c6d7ec398649f6aef0eebc0a",
+      "source": {
+        "fileKey": "pWjqzjZD2HgayCk6pQg3Zk",
+        "nodeId": "214:89",
+        "extraction": "Original frame PNG export at 1x, 393\u00d7852; no cropping, redrawing, or design changes"
+      }
     }
   }
 }

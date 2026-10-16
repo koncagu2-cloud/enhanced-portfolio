@@ -47,7 +47,7 @@ test('duplicate evidence IDs are rejected', () => {
 test('Community Spaces originals match provenance hashes and durable source references', () => {
   const manifest = JSON.parse(readFileSync('docs/community-spaces-assets.json', 'utf8'));
   const assets = Object.entries(manifest.assets) as [string, { sha256: string; source: object }][];
-  assert.equal(assets.length, 7);
+  assert.equal(assets.length, 9);
   for (const [path, entry] of assets) {
     assert.equal(createHash('sha256').update(readFileSync(path)).digest('hex'), entry.sha256);
     assert.ok(!JSON.stringify(entry.source).includes('/api/mcp/asset/'));

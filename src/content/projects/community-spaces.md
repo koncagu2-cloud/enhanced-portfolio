@@ -88,7 +88,7 @@ caseStudy:
         - The final concept connects a proposed community space with an event-registration prototype. The home screen introduces a calendar and an entry point to events. The event list provides dates and descriptions, while confirmation offers a way to return home, keep browsing, or add the event to a calendar.
         - Together, the spatial sketches, user-need statements, task flow, wireframes, and high-fidelity screens document the team’s physical and digital concept.
       media: [screens]
-      sourceNote: Original Figma Home, Events, and Confirmation frames · 212:109, 214:237, and 214:4; final class presentation.
+      sourceNote: Original Figma Event Details, Reserve Spot, and Confirmation frames · 214:167, 214:89, and 214:4; final class presentation.
     - id: reflection
       kicker: 06 / Reflection & Next Steps
       title: Designing beyond the screen.

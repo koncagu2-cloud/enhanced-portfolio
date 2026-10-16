@@ -80,7 +80,7 @@ test('desktop and narrow layouts retain readable figures and comparison without 
       await expect(img).toHaveJSProperty('complete', true);
     }
     await page.evaluate(() => scrollTo(0, 0));
-    if (width === 390 || width === 1440) {
+    if (width === 320 || width === 390 || width === 1440) {
       await page.screenshot({ path: `test-results/community-${width}.png`, fullPage: true });
       await page.screenshot({ path: `test-results/community-full-${width}.jpg`, fullPage: true, quality: 40 });
       const height = await page.evaluate(() => document.documentElement.scrollHeight);
@@ -105,8 +105,15 @@ test('case-study light/dark and mobile pass automated accessibility checks', asy
   await page.getByRole('button', { name: 'Dark mode' }).click();
   expect((await audit()).violations).toEqual([]);
   await page.screenshot({ path: 'test-results/community-dark.jpg', quality: 80 });
-  await page.setViewportSize({ width: 390, height: 844 });
-  expect((await audit()).violations).toEqual([]);
+  for (const width of [320, 390, 768, 1440]) {
+    await page.setViewportSize({ width, height: 844 });
+    for (const dark of [false, true]) {
+      const toggle = page.getByRole('button', { name: 'Dark mode', exact: true });
+      if ((await toggle.getAttribute('aria-pressed')) !== String(dark)) await toggle.click();
+      await expect(toggle).toHaveAttribute('aria-pressed', String(dark));
+      expect((await audit()).violations).toEqual([]);
+    }
+  }
 });
 
 test('case-study navigation remains available without JavaScript and respects reduced motion', async ({ browser, page }) => {
@@ -121,4 +128,33 @@ test('case-study navigation remains available without JavaScript and respects re
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto(path);
   expect(await page.locator('.case-hero').evaluate((el) => getComputedStyle(el).animationName)).toBe('none');
+});
+
+
+test('case-study internal links resolve and Final Concept uses original details and reservation screens', async ({ page, request }) => {
+  await page.goto(path);
+  const hrefs = await page.locator('a[href]').evaluateAll(links => [...new Set(links.map(a => a.getAttribute('href')!))]);
+  for (const href of hrefs.filter(href => href.startsWith('/'))) {
+    const url = new URL(href, 'http://127.0.0.1:4322');
+    const response = await request.get(url.pathname);
+    expect(response.status(), href).toBe(200);
+    if (url.hash) expect(await response.text(), href).toContain(`id="${url.hash.slice(1)}"`);
+  }
+  await expect(page.locator('#concept .screen-sequence img')).toHaveCount(3);
+  await expect(page.locator('#concept .artifact-source')).toHaveText([
+    'Figma · Event Details Page · 214:167', 'Figma · Reserve Spot Page · 214:89', 'Figma · Confirmation Page · 214:4',
+  ]);
+  for (const width of [320, 390]) {
+    await page.setViewportSize({ width, height: 844 });
+    await page.goto(path);
+    const count = await page.locator('a[href], button:not([hidden])').count();
+    for (let i = 0; i < count; i++) {
+      await page.keyboard.press('Tab');
+      expect(await page.evaluate(() => {
+        const el = document.activeElement as HTMLElement;
+        const rect = el.getBoundingClientRect();
+        return /^(A|BUTTON|MAIN)$/.test(el.tagName) && getComputedStyle(el).outlineStyle !== 'none' && rect.left >= 0 && rect.right <= innerWidth;
+      })).toBe(true);
+    }
+  }
 });
