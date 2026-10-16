@@ -83,3 +83,9 @@ Phase 7 — Deploy only after review.
 4. Produce a concise evidence inventory and prioritized questions for Suleyman, distinguishing confirmed facts from assumptions.
 5. Propose a technical architecture and first small, testable milestone. **Do not implement the full website yet.**
 6. Record any substantive discoveries in versioned docs and share a concise status update.
+
+## Agreed collaboration checkpoint — 2026-10-16
+
+ChatGPT's review supports the documentation structure and proposed Astro + TypeScript direction in PR #1. Suleyman has explicitly asked that D04–D09 remain proposed until he approves them; support from ChatGPT is not approval to implement. Keep PR #1 open and resolve the highest-priority questions before merging or starting frontend work.
+
+Agreed priorities: verify project evidence, attribution, and resume accuracy before implementation. Evidence provenance is a first-class case-study requirement: connect factual claims to sources, distinguish original artifacts from redraws, document personal/team contribution, verification status, publication permission, and limitations. The exact schema and technical architecture remain under review.
