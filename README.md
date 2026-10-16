@@ -51,3 +51,7 @@ pnpm run preview
 Browser tests run against the built output and start/stop their own preview server on port 4322. Rebuild after changing source. The test suite covers keyboard interaction, responsive overflow, theme persistence/storage failures, no-JavaScript use, and automated accessibility checks; it is not a full accessibility certification.
 
 See [M1 implementation notes](docs/IMPLEMENTATION_M1.md) for components, layout/theme rules, unresolved decisions, and validation results. Evidence provenance lives with the Markdown project records; the schema cannot replace source verification or permission review. `noindex` is an indexing hint, not access control. This repository and everything committed to it are public.
+
+## Community Spaces review case study
+
+This feature adds `/work/community-spaces/` and an authentic-artifact homepage feature, still noindex and review-only. See [source/implementation notes](docs/COMMUNITY_SPACES.md) for team attribution, source hashes, screenshots, validation, and unresolved issues. No launch or demonstrated usability improvements are claimed.

@@ -1,6 +1,7 @@
 ---
 import { site } from '../data/site';
 import ThemeToggle from './ThemeToggle.astro';
+const homePrefix = Astro.url.pathname === import.meta.env.BASE_URL ? '' : import.meta.env.BASE_URL;
 ---
 <div class="review-strip">
   <div class="container strip-inner">
@@ -9,9 +10,9 @@ import ThemeToggle from './ThemeToggle.astro';
   </div>
 </div>
 <header class="container site-header">
-  <a class="wordmark" href="#top" aria-label={`${site.name}, back to top`}>Suleyman<br />Koncagul<span aria-hidden="true">.</span></a>
+  <a class="wordmark" href={`${homePrefix}#top`} aria-label={`${site.name}, homepage`}>Suleyman<br />Koncagul<span aria-hidden="true">.</span></a>
   <nav aria-label="Primary navigation">
-    <ul>{site.nav.map(({ label, href }) => <li><a href={href}>{label}</a></li>)}</ul>
+    <ul>{site.nav.map(({ label, href }) => <li><a href={`${homePrefix}${href}`}>{label}</a></li>)}</ul>
   </nav>
   <ThemeToggle />
 </header>

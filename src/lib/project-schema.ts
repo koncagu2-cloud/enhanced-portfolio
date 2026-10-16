@@ -20,6 +20,23 @@ export const projectSchema = z.object({
   provisionalSummary: z.string().min(1),
   publicationStatus: z.enum(['draft', 'review', 'published']),
   workStatus: z.enum(['unverified', 'concept', 'prototype', 'launched']),
+  caseStudy: z.object({
+    slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
+    headline: z.string().min(1),
+    introduction: z.string().min(1),
+    context: z.string().min(1),
+    role: z.string().min(1),
+    team: z.array(z.string().min(1)).min(1),
+    sections: z.array(z.object({
+      id: z.string().regex(/^[a-z][a-z0-9-]*$/),
+      title: z.string().min(1),
+      kicker: z.string().min(1),
+      paragraphs: z.array(z.string().min(1)).min(1),
+      points: z.array(z.string().min(1)).default([]),
+      sourceNote: z.string().min(1),
+      media: z.array(z.enum(['flow', 'sketch', 'space', 'comparison', 'screens'])).default([]),
+    })).min(1),
+  }).optional(),
   evidence: z.array(evidenceSchema),
   claims: z.array(z.object({
     text: z.string().min(1),

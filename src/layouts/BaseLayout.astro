@@ -1,15 +1,15 @@
 ---
 import '../styles/global.css';
 import { site } from '../data/site';
-interface Props { title?: string }
-const { title = `${site.name} — ${site.role} / provisional homepage` } = Astro.props;
+interface Props { title?: string; description?: string }
+const { title = `${site.name} — ${site.role} / provisional homepage`, description = 'A provisional, low-fidelity portfolio homepage for design review. Project evidence and resume details remain under review.' } = Astro.props;
 ---
 <!doctype html>
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A provisional, low-fidelity portfolio homepage for design review. Project evidence and resume details remain under review." />
+    <meta name="description" content={description} />
     <meta name="robots" content="noindex, nofollow" />
     <title>{title}</title>
     <script is:inline>
