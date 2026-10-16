@@ -1,0 +1,10 @@
+---
+import ArtifactFigure from './ArtifactFigure.astro';
+import type { Artifact } from './artifact';
+interface Props { before: Artifact; after: Artifact; beforeLabel: string; afterLabel: string }
+const { before, after, beforeLabel, afterLabel } = Astro.props;
+---
+<div class="design-comparison" aria-label="Mid-fidelity and high-fidelity event screen comparison">
+  <div><h3>{beforeLabel}</h3><ArtifactFigure asset={before} screen /></div>
+  <div><h3>{afterLabel}</h3><ArtifactFigure asset={after} screen /></div>
+</div>

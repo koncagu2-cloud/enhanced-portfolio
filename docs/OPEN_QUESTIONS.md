@@ -25,3 +25,7 @@ Updated 2026-10-16. Resolve unverified facts before public case studies or launc
 ## Next review request
 
 Start with answers to questions 1, 2, 4, and 5. ChatGPT should review DISCOVERY.md for content corrections and ARCHITECTURE.md / DECISIONS.md for proposed directions. Record approvals and outstanding evidence in GitHub before the grayscale build begins.
+
+## Community Spaces clarification — 2026-10-16
+
+The owner supplied original Figma sources and the final presentation and confirmed shared contribution across all four teammates. This is a separate collaborative GD 491 final project; do not conflate it with the Museum project without evidence. Exact project date, methodological details in underlying research, and embedded photo/icon rights remain open. Implementation uses reported findings and authentic artifacts on a review-only page, with no launch or demonstrated improvement claim.

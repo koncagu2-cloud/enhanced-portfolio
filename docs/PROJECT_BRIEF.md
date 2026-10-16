@@ -102,3 +102,9 @@ This later instruction supersedes the planning-only hold for the following scope
 - Implement a grayscale homepage using Astro, TypeScript, and content collections on a separate branch; mark temporary content provisional and open a draft PR.
 
 Evidence, attribution, resume accuracy, and artifact permissions remain unresolved. Do not invent or imply research, outcomes, or approved ownership. PR #1 stays open; implementation has a separate stacked draft PR. No production deployment, domain changes, or modifications to the old portfolio. See IMPLEMENTATION_M1.md for scope, component/layout/theme choices, and validation results.
+
+## Community Spaces case-study assignment — 2026-10-16
+
+The owner requested a dedicated review case study at /work/community-spaces/ and a large homepage feature, using supplied Figma designs, needs statements, and the GD 491 final presentation. The owner confirmed this was a collaborative class final and all four teammates worked together across the project. Credit Katelyn Jewett, Illiana Gonzalez, Boran Erdogan, and Suleyman Koncagul equally; do not invent an individual lead role.
+
+Attribute findings to the class materials, preserve authentic visuals, and frame launch, impact, and usability validation conservatively. Proposed testing remains future work. Preserve noindex, create a separate feature branch/draft PR, and do not merge, deploy, or edit the old portfolio. COMMUNITY_SPACES.md records source provenance, implementation, screenshots, and unresolved issues.

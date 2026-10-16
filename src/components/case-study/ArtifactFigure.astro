@@ -1,0 +1,13 @@
+---
+import type { Artifact } from './artifact';
+interface Props {
+  asset: Artifact;
+  screen?: boolean;
+  eager?: boolean;
+}
+const { asset, screen = false, eager = false } = Astro.props;
+---
+<figure class:list={['artifact-figure', { 'artifact-screen': screen }]}>
+  <div class="artifact-mat"><img src={asset.image.src} width={asset.image.width} height={asset.image.height} alt={asset.alt} loading={eager ? 'eager' : 'lazy'} decoding="async" /></div>
+  <figcaption><span>{asset.caption}</span><span class="artifact-source">{asset.source}</span><a href={asset.image.src}>View original export (PNG)</a></figcaption>
+</figure>

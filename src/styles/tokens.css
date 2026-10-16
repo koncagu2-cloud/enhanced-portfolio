@@ -3,10 +3,12 @@
   --ink: #202020;
   --muted: #595959;
   --rule: #c9c9c5;
+  --artifact-mat: #eaeae7;
 }
 :root[data-theme='dark'] {
   --paper: #171717;
   --ink: #eeeeeb;
   --muted: #b8b8b3;
   --rule: #555552;
+  --artifact-mat: #262626;
 }

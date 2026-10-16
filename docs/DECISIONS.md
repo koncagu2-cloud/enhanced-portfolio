@@ -35,3 +35,7 @@ Suleyman explicitly approved primary positioning as UX / Product Designer; 80% E
 M1 choices: Astro 7.4.0, TypeScript, schema-backed Markdown collections, Node 24.19.0, pnpm 11.25.0 with committed lockfile (available local runtime; replaces the proposed npm choice), standard static HTML and no React, system fonts and grayscale CSS, no backend, no analytics, no deployment workflow. Header links target existing homepage sections. Theme starts light regardless of OS; an explicit choice persists when storage is available. No-JavaScript mode retains core navigation and native disclosures.
 
 Implementation review is stacked on docs/portfolio-discovery (PR #1), which remains open/draft. The new draft PR targets that branch to isolate implementation changes; after planning merges, retarget to main and recheck the diff. Do not merge either PR without owner review.
+
+## Community Spaces assignment — 2026-10-16
+
+The owner explicitly requested a dedicated Community Spaces page and large homepage feature using authentic supplied sources. This authorizes `/work/community-spaces/` and its review-only content, not publication of other candidates. Shared team contribution was confirmed by the owner. See COMMUNITY_SPACES.md for sources, validation, and unresolved rights/content issues. Work is on a separate feature branch stacked on PR #2; neither merge nor deployment is authorized. No flagship status is assigned beyond the requested feature.

@@ -6,7 +6,7 @@ test('homepage hierarchy, navigation, and honest project review state', async ({
   await expect(page.locator('h1')).toHaveCount(1);
   await expect(page.getByRole('navigation', { name: 'Primary navigation' }).getByRole('link')).toHaveText(['Work', 'About', 'Resume', 'Contact']);
   expect(await page.locator('main > section').evaluateAll((sections) => sections.map((s) => s.getAttribute('aria-labelledby')))).toEqual(['hero-heading', 'work-heading', 'approach-heading', 'about-heading', 'contact-heading']);
-  await expect(page.locator('article')).toHaveCount(2);
+  await expect(page.locator('article')).toHaveCount(3);
   await expect(page.getByText('Provisional candidate', { exact: true })).toHaveCount(2);
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow');
   await page.getByRole('navigation').getByRole('link', { name: 'Work', exact: true }).click();
@@ -87,10 +87,10 @@ test('unavailable storage and reduced motion do not break interaction', async ({
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
 });
 
-test('no case-study routes or fabricated resume download exist', async ({ page, request }) => {
+test('uncommissioned case-study routes and fabricated resume downloads stay absent', async ({ page, request }) => {
   const response = await request.get('/work/d2l/');
   expect(response.status()).toBe(404);
   await page.goto('/');
   await expect(page.locator('a[download], a[href$=".pdf"]')).toHaveCount(0);
-  await expect(page.locator('a[href^="/work/"]')).toHaveCount(0);
+  expect(await page.locator('a[href^="/work/"]').evaluateAll((links) => [...new Set(links.map((a) => a.getAttribute('href')))])).toEqual(['/work/community-spaces/']);
 });

@@ -1,0 +1,51 @@
+{
+  "reviewDate": "2026-10-16",
+  "creator": "Community Spaces class project team",
+  "usage": "Owner-requested review implementation; publication rights for embedded photos/icons require review before launch",
+  "assets": {
+    "src/assets/community-spaces/confirmation-hi-fi.png": {
+      "sha256": "25dc69023be29756188c5b0aeaed51e294198d1419067729e017faed5f7b62df",
+      "source": {
+        "fileKey": "pWjqzjZD2HgayCk6pQg3Zk",
+        "nodeId": "214:4"
+      }
+    },
+    "src/assets/community-spaces/events-hi-fi.png": {
+      "sha256": "35d9f7ec82ad646dd3fa232d2c91b2d923fcfd6ca7c312d350facbae5b9b95f4",
+      "source": {
+        "fileKey": "pWjqzjZD2HgayCk6pQg3Zk",
+        "nodeId": "214:237"
+      }
+    },
+    "src/assets/community-spaces/events-mid-fi.png": {
+      "sha256": "aee1f4d44de153d2d34d02829eb001ef2d08c5a91e44449666784f21d578224a",
+      "source": {
+        "fileKey": "pWjqzjZD2HgayCk6pQg3Zk",
+        "nodeId": "1:5"
+      }
+    },
+    "src/assets/community-spaces/home-hi-fi.png": {
+      "sha256": "94adac45e2e4de5ad08d534271685912e6026c24378bf64abaafe097ec802b7f",
+      "source": {
+        "fileKey": "pWjqzjZD2HgayCk6pQg3Zk",
+        "nodeId": "212:109"
+      }
+    },
+    "src/assets/community-spaces/lo-fi-sketch.png": {
+      "sha256": "a76f2f5af136ba3f1d62892ed03c228d0ff33fc4da5b566c585af2640f9cc707",
+      "source": {
+        "document": "GD 491 Case Study for Community Spaces.pdf",
+        "page": 11,
+        "extraction": "Original embedded sketch image; PNG encoding, no redrawing"
+      }
+    },
+    "src/assets/community-spaces/task-flow.png": {
+      "sha256": "c4ac230347098b394fa90b54c24b25ad675ee3d9c97cd04a8608bc7a4a1d370a",
+      "source": {
+        "document": "GD 491 Case Study for Community Spaces.pdf",
+        "page": 8,
+        "extraction": "Original embedded image; PNG encoding, no redrawing"
+      }
+    }
+  }
+}
