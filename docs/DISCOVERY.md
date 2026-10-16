@@ -42,3 +42,7 @@ Presence of prose or a diagram proves a file exists, not that the described rese
 ## Limits and next step
 
 No website was implemented. No build or browser audit was run on the old site. Source-level checks cannot establish accessibility compliance, research quality, or live-link availability. Resolve the priority questions in OPEN_QUESTIONS.md, then review the proposed architecture in DECISIONS.md and ARCHITECTURE.md.
+
+## Live reference confirmed by owner
+
+On 2026-10-16 Suleyman confirmed [suleymankoncagul.com](https://suleymankoncagul.com/) is the old portfolio. A read-only browser inspection of the homepage confirmed the UX / Experience Designer positioning; About, Projects, Resume, and Contact navigation; and capability/philosophy content without project cards on the homepage. This supports the recommendation to bring concrete selected work earlier in the hiring journey. It does not establish that the deployed code exactly matches the local snapshot. This was a limited homepage check, not a full visual, responsive, accessibility, or usability audit. The site and its domain remain reference material; no changes were made to them.
