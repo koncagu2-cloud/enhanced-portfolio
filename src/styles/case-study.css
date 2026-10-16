@@ -99,3 +99,34 @@
   .process-section { padding-block: 2rem 3rem; }
   .artifact-mat { padding: .5rem; }
 }
+
+/* Narrative variation stays within the approved editorial tokens. */
+.project-status { max-width: 80ch; color: var(--muted); font-size: .85rem; margin-top: 1.5rem; }
+.research-finding { border-left: 2px solid var(--ink); padding: 1.5rem 2rem; margin-top: 2rem; background: var(--artifact-mat); max-width: 40rem; }
+.finding-number { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(3rem, 6vw, 5rem); line-height: 1.1; letter-spacing: -.05em; margin-bottom: 1rem; }
+.research-finding .source-note { margin-top: 1rem; }
+.experience-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; margin-block: 2.5rem; }
+.experience-pair > div { padding-block: 1.25rem; border-top: 1px solid var(--ink); }
+.experience-pair h3, .journey h3, .next-priorities h3 { font-size: 1.25rem; letter-spacing: -.03em; line-height: 1.3; }
+.experience-pair ul, .experience-pair ol { padding-left: 1.25rem; margin-bottom: 0; }
+.experience-pair li + li { margin-top: .5rem; }
+.journey { margin-top: 3rem; }
+.journey > p { max-width: 70ch; margin-block: 1rem 1.5rem; }
+.chapter-evolution { grid-template-columns: 1fr; gap: 2rem; }
+.chapter-evolution .process-heading h2 { max-width: 27ch; }
+.chapter-evolution .process-copy { max-width: 70ch; }
+.chapter-evolution .artifact-figure:not(.artifact-screen) { max-width: 50rem; margin-inline: auto; }
+.chapter-evolution .design-comparison { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--rule); gap: clamp(2rem, 8vw, 8rem); }
+.chapter-evolution .design-comparison > div { max-width: 393px; width: 100%; justify-self: center; }
+.chapter-reflection { grid-template-columns: 1fr; gap: 2rem; }
+.chapter-reflection .process-heading h2 { max-width: none; }
+.chapter-reflection .process-copy > p:first-child { font: clamp(1.35rem, 2.3vw, 2rem)/1.45 Georgia, 'Times New Roman', serif; letter-spacing: -.02em; }
+.next-priorities { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin-top: 2.5rem; }
+.next-priorities > div { border-top: 1px solid var(--ink); padding-top: 1.25rem; }
+.next-priorities p { margin-top: 1rem; font-size: .95rem; }
+@media (max-width: 60rem) { .next-priorities { grid-template-columns: 1fr; gap: 1.5rem; } }
+@media (max-width: 40rem) {
+  .experience-pair { grid-template-columns: 1fr; gap: 1rem; }
+  .research-finding { padding: 1.25rem; }
+  .chapter-evolution .design-comparison > div { max-width: 280px; }
+}

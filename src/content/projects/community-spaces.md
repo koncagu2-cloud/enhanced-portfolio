@@ -51,106 +51,50 @@ caseStudy:
   role: Research, concept development, interaction design, and presentation — shared across the team.
   team: [Katelyn Jewett, Illiana Gonzalez, Boran Erdogan, Suleyman Koncagul]
   sections:
-    - id: context
-      kicker: 01 / Context
-      title: A community space, with a digital invitation.
+    - id: challenge
+      kicker: 01 / The Challenge
+      title: A place to gather. A way to join in.
       paragraphs:
-        - The team explored a space where college students and community members could study, socialize, and build relationships. Its digital companion was intended to make events easier to discover and provide enough information to sign up.
-        - The scope connected a physical-space concept with an app prototype. It was a class final project, not a commissioned or launched service.
-      sourceNote: Based on the final presentation, pages 2, 4, 6, and 16, and the team's Figma concept statement.
+        - Community Spaces began with two connected needs — somewhere to study and build relationships, and a way to find activities worth attending. Our team explored a shared space for students and community members, supported by a companion application called KIBS.
+        - The design challenge was to connect the place with the path to participation. Someone should be able to discover an event, understand its details, and sign up before arriving.
+      sourceNote: Project brief and need statements · Class presentation, pages 2, 4, 6, and 16; original Figma user needs.
     - id: research
-      kicker: 02 / Reported research
-      title: Social connection and access shaped the brief.
+      kicker: 02 / Understanding Students
+      title: Make room for connection.
       paragraphs:
-        - The class presentation reports a positive response to a community space for social connection and cultural exchange. It also reports that participants recommended accessible features, and that approximately 9 out of 12 wanted more entertainment involving music or concerts.
-        - These are findings reported in the class materials. The available presentation does not provide enough detail to independently assess recruitment, study procedure, or how representative those responses were. They informed the team's direction; they do not prove demand or effectiveness.
-      points:
-        - Physical need — combine opportunities to study and socialize.
-        - Digital need — see event availability on specific dates and find an event to attend.
-        - Design intent — make participation welcoming and information easier to access.
-      sourceNote: Final presentation, research on page 3 and user needs on page 4; corroborating team need statements in Figma. No new interviews or research results are claimed here.
-    - id: problem-definition
-      kicker: 03 / Problem definition
-      title: Connect the desire to gather with a way to participate.
+        - The class research reported interest in a space for social connection and cultural exchange. Participants also recommended accessible features and more entertainment involving music or concerts.
+        - These findings helped frame a concept that brought study, social activities, and events together. The digital need was more specific — see what is available on a chosen date and find an event to attend.
+      sourceNote: Research and user needs · Class presentation, pages 3–4; original Figma user needs.
+    - id: experience
+      kicker: 03 / Designing the Experience
+      title: One experience, across place and screen.
       paragraphs:
-        - The team's need statements brought two related goals together. Students and community members needed a place to study while building relationships, and a way to see which events were available on dates that suited them.
-        - The digital design challenge became specific — help someone understand what is happening, choose an event, and complete signup. The physical concept addressed the setting for those activities; the app addressed finding and joining them.
-      points:
-        - People — students and community members, rather than students alone.
-        - Information — event details, dates, availability, and requirements before committing.
-        - Participation — a path from browsing to a clear confirmation state.
-      sourceNote: Editorial synthesis of the team's need/concept statements and task definition, presentation pages 2, 4, and 8. These are design goals, not demonstrated effects.
-    - id: physical-digital
-      kicker: 04 / Physical + digital concept
-      title: Design the place and the invitation together.
+        - The physical concept explored study areas, shared activities, event spaces, and a proposed Sparty Market. KIBS connected people to that setting through event information and registration.
+        - The team’s original spatial sketches show different ways to support gathering — from seating and shared tables to a stage and outdoor areas.
+      media: [space, flow]
+      sourceNote: Physical concept and task flow · Class presentation, pages 6, 8, 10, and 16; original Figma concept statement.
+    - id: evolution
+      kicker: 04 / From Sketches to Screens
+      title: Give the journey structure, then character.
       paragraphs:
-        - The spatial concept combined study and event areas, with comfort and social connection as guiding intentions. The original sketch collage shows different teammates exploring seating, shared activities, a stage, market functions, and outdoor gathering areas.
-        - KIBS was the digital companion — a way to see events, inspect details, and reserve a place. The prototype also explores calendar, occupancy, history, and market-related destinations. These remain concept features, not operating services.
-        - The relationship matters — an event interface needs to communicate what someone can expect from the place, while the physical setting needs to support the activities being offered. The sketches and app frames document that shared exploration without establishing that the space was built.
-      media: space
-      sourceNote: Original team spatial-sketch collage from presentation page 10; physical-space intentions on pages 6 and 16, and digital concept/task statements on pages 2, 4, and 8.
-    - id: task-flow
-      kicker: 05 / Task flow
-      title: From discovering an event to confirming a place.
+        - Early sketches connected login, home, events, signup, and confirmation. Working through this sequence gave the team a structure for the digital experience before adding visual detail.
+        - The mid-fidelity event list organized repeated entries and navigation. The high-fidelity design added event imagery, stronger contrast, and the team’s original color palette while keeping event browsing central. The vibrant direction reflected the welcoming space the team envisioned.
+      media: [sketch, comparison]
+      sourceNote: Digital sketch and design progression · Class presentation, pages 9 and 11–14; original Figma Events frames, 1:5 and 214:237.
+    - id: concept
+      kicker: 05 / The Final Concept
+      title: Discover. Explore. Take part.
       paragraphs:
-        - The team's task flow centered on finding an event and signing up. After login and home, the main path moves through the event list, event details, signup, a double-check step, and confirmation. History, the market, and the shopping cart appear as adjacent destinations.
-        - This makes the intended interaction sequence visible. Whether people understand each step without assistance remains a question for future testing.
-      media: flow
-      sourceNote: Original task-flow image extracted from the final presentation, page 8. The text above provides the diagram's main path without requiring readers to decipher the image.
-    - id: exploration
-      kicker: 06 / Early exploration
-      title: Start with the sequence, then shape the screens.
-      paragraphs:
-        - The presentation includes hand-drawn sketches of the space and the digital flow. The sketch shown here connects login, home, events, signup, and confirmation before visual styling is added.
-        - It records the team's exploration of structure. The available materials do not establish which alternatives were tested with users or why each option was rejected.
-      media: sketch
-      sourceNote: Authentic sketch extracted from the final presentation, page 11. It is presented as team work, without assigning individual authorship.
-    - id: design-development
-      kicker: 07 / Design evolution
-      title: From grayscale structure to a colorful invitation.
-      paragraphs:
-        - The mid-fidelity event list establishes repeated event entries and navigation. The later high-fidelity version adds event imagery, stronger visual contrast, and the team's color palette. Both retain event browsing as a central task.
-        - The class presentation describes a desire for a vibrant, welcoming space and app. This comparison documents visible design changes; it does not claim those changes improved usability, accessibility, or registration rates.
-      media: comparison
-      sourceNote: Original Events Page frames from the supplied Figma file, nodes 1:5 and 214:237. Design-stage order is supported by the presentation, pages 12–14; color intent appears on page 9.
-    - id: prototype
-      kicker: 08 / Final deliverables
-      title: A connected set of prototype touchpoints.
-      paragraphs:
-        - The high-fidelity home screen introduces the calendar and an event entry point. The event list provides descriptions and dates. The confirmation screen offers actions to return home, continue browsing, or add an event to a calendar.
-        - These are authentic prototype screens. Names, dates, building occupancy, and availability shown inside them are illustrative interface content, not evidence of live events, a deployed system, or observed outcomes.
-      points:
-        - A physical-space concept supported by team sketches and a final presentation.
-        - User-need and concept statements connecting study, social connection, and event discovery.
-        - A task flow and design progression from sketches through mid-fidelity and high-fidelity wireframes.
-        - Prototype screens covering home, event browsing, event details, reservation, a double-check step, and confirmation.
-      media: screens
-      sourceNote: Supplied Figma frames 212:109 (Home Page), 214:237 (Events Page), and 214:4 (Confirmation Page).
-    - id: outcomes
-      kicker: 09 / Outcome and limits
-      title: A developed concept. Validation is still ahead.
-      paragraphs:
-        - The available work includes need statements, a task flow, sketches, wireframes, a high-fidelity prototype, and a final class presentation. Together they show how the team developed a connected physical and digital concept.
-        - The materials do not establish a public launch or usability testing that demonstrated improvements. The presentation's attendance, scholarship, and academic benchmarks are proposed measures, not achieved outcomes. No increase in participation, accessibility, or academic performance is claimed.
-      sourceNote: Final presentation, pages 7–16. Artifact completion is distinguished from service impact.
+        - The final concept connects a proposed community space with an event-registration prototype. The home screen introduces a calendar and an entry point to events. The event list provides dates and descriptions, while confirmation offers a way to return home, keep browsing, or add the event to a calendar.
+        - Together, the spatial sketches, user-need statements, task flow, wireframes, and high-fidelity screens document the team’s physical and digital concept.
+      media: [screens]
+      sourceNote: Original Figma Home, Events, and Confirmation frames · 212:109, 214:237, and 214:4; final class presentation.
     - id: reflection
-      kicker: 10 / Reflection
-      title: The connection is the design opportunity.
+      kicker: 06 / Reflection & Next Steps
+      title: Designing beyond the screen.
       paragraphs:
-        - Read together, the artifacts show more than an event list — they connect a proposed place, activities, and the decisions needed to take part. The task flow provides a useful thread for telling that story from early sketches to final screens.
-        - The next challenge is to examine the assumptions between those screens. An availability label, membership choice, and confirmation message each need to be understood in context. A polished prototype makes those questions tangible, but cannot answer them by itself.
-        - Shared contribution is central to this account. The spatial and digital explorations belong to the four-person team; this portfolio presents that collaboration without assigning a separate lead role or inventing personal learning outcomes.
-      sourceNote: Portfolio reflection on the supplied artifacts and owner-confirmed shared contribution. This is interpretation, not a new research finding or completed evaluation.
-    - id: next-steps
-      kicker: 11 / Proposed next steps
-      title: Test the path to participation.
-      paragraphs:
-        - Future evaluation could ask students and community members to find a suitable event, understand its requirements, reserve a place, and interpret confirmation. These are proposed tasks, not completed tests.
-      points:
-        - Observe where people hesitate, misinterpret availability, or need help recovering from an error.
-        - Evaluate screen-reader and keyboard access, contrast, target sizes, and non-color status cues before implementation.
-        - Include students and community members with varied access needs, with consent and appropriate privacy safeguards.
-        - Revisit whether login is necessary before browsing and how a full, canceled, or rescheduled event should be communicated.
-      sourceNote: Portfolio reflection and proposed evaluation, added for this case study; not research reported by the class.
+        - Community Spaces explored how digital interactions could support real-world connections. By designing the physical environment and its companion application together, our team considered the experience from discovering an event to participating in a shared space.
+        - The next step would be to evaluate how people move through that journey and how well the concept supports different access needs. These are proposed next steps, not completed testing.
+      sourceNote: Project-level reflection and proposed evaluation priorities.
 ---
-Community Spaces is a collaborative class concept and prototype. This review page uses supplied project artifacts and reported class findings. It does not claim a launched service or demonstrated usability gains.
+Community Spaces is a collaborative university concept and prototype.

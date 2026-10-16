@@ -34,7 +34,7 @@ export const projectSchema = z.object({
       paragraphs: z.array(z.string().min(1)).min(1),
       points: z.array(z.string().min(1)).default([]),
       sourceNote: z.string().min(1),
-      media: z.enum(['flow', 'sketch', 'space', 'comparison', 'screens']).optional(),
+      media: z.array(z.enum(['flow', 'sketch', 'space', 'comparison', 'screens'])).default([]),
     })).min(1),
   }).optional(),
   evidence: z.array(evidenceSchema),

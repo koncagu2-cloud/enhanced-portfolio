@@ -1,21 +1,17 @@
-# Full-page mobile review capture
+# Community Spaces — mobile, six-chapter refinement
 
-Viewport width: 390px. Consecutive, unedited browser-capture strips cover the entire page from navigation to footer. Split only to fit the GitHub connector transport limit. The single-image full-resolution capture is also delivered in chat.
+Full-page browser capture at 390px. Consecutive strips preserve the complete page from navigation to footer. Review capture only; not research evidence.
 
-![mobile capture 01](community-full-390-part-01.jpg)
+![mobile section 1](community-full-390-part-01.jpg)
 
-![mobile capture 02](community-full-390-part-02.jpg)
+![mobile section 2](community-full-390-part-02.jpg)
 
-![mobile capture 03](community-full-390-part-03.jpg)
+![mobile section 3](community-full-390-part-03.jpg)
 
-![mobile capture 04](community-full-390-part-04.jpg)
+![mobile section 4](community-full-390-part-04.jpg)
 
-![mobile capture 05](community-full-390-part-05.jpg)
+![mobile section 5](community-full-390-part-05.jpg)
 
-![mobile capture 06](community-full-390-part-06.jpg)
+![mobile section 6](community-full-390-part-06.jpg)
 
-![mobile capture 07](community-full-390-part-07.jpg)
-
-![mobile capture 08](community-full-390-part-08.jpg)
-
-![mobile capture 09](community-full-390-part-09.jpg)
+![mobile section 7](community-full-390-part-07.jpg)
