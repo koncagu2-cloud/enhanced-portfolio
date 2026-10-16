@@ -42,6 +42,23 @@ Every project needs: slug, title, concise summary, project type (coursework/pers
 
 Keep **publication status** (draft/review/published) separate from **work status** (concept/prototype/launched). Each evidence record should carry an ID, approved public source or artifact path, evidence type, date/context, contributor attribution, caption/alt text, and whether it is original, reconstructed, or explanatory. Explicitly distinguish observation, interpretation, and proposed validation. Use outcome text plus optional sourced metrics; never require invented numbers.
 
+### Evidence provenance requirements
+
+The requirement to track provenance is agreed; the following field design remains proposed pending architecture/content-model approval. Treat evidence as referenced records rather than captions alone. Each substantive research, ownership, or outcome claim should reference evidence IDs.
+
+| Field | Purpose |
+| --- | --- |
+| evidenceId / claimIds | Stable connection between artifacts, claims, and design decisions |
+| sourceReference | Original source location or safe reference; do not expose private source URLs or credentials |
+| sourceContext / date | What activity produced it and when; record unknowns explicitly |
+| creator / contribution | Separate original creator, team attribution, and Suleyman's contribution |
+| representation | Original, redacted, reconstructed, or explanatory; describe transformations |
+| verification | Unverified, source-checked, or owner-confirmed; record reviewer and review date when checked |
+| publicationPermission | Pending, approved, or restricted; record what can be shown publicly |
+| limitations | What the evidence supports, what it cannot establish, and unresolved uncertainty |
+
+The editorial publication gate requires adequate verified support and permission for each factual claim. Pending or restricted evidence blocks that claim's publication, not necessarily the whole project if it can be honestly narrowed. Conceptual reasoning and future validation can be included when explicitly labeled. An explanatory redraw cannot establish that interviews or testing occurred. Unknown evidence should never silently become a confirmed finding. Only public-safe metadata belongs in this repository.
+
 Schema checks can enforce structure and referenced files, but cannot certify truth. Owner review must confirm claims, authorship, consent, and publication permission. Drafts should be excluded both from project indexes and generated public routes. Content in this public Git repository is still public even when excluded from the built site; keep raw or sensitive evidence outside it.
 
 ## Delivery and quality gates after approval
