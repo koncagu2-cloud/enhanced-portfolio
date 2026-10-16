@@ -26,7 +26,7 @@ const root = import.meta.env.BASE_URL;
 <BaseLayout title="Community Spaces — Collaborative UX case study" description="A collaborative GD 491 class concept for a community space and event-registration app. Authentic team artifacts, reported class research, and proposed next steps; review only.">
   <div id="top"><SiteHeader />
     <main id="main" class="container case-study" tabindex="-1">
-      <div class="case-intro"><header class="case-hero"><a class="case-back" href={`${root}#work`}>← Back to selected work</a><p class="micro">{cs.context} / UX & interaction design</p><h1>{project.data.title}</h1><p class="case-deck">{cs.headline}</p><p class="case-scope">A collaborative concept pairing a welcoming community space with KIBS, an app designed to help students and community members discover events and sign up.</p></header>
+      <div class="case-intro"><header class="case-hero"><a class="case-back" href={`${root}#work`}>← Back to selected work</a><p class="micro">{cs.context} / UX & interaction design</p><h1>{project.data.title}</h1><p class="case-deck">{cs.headline}</p><p class="case-scope">{cs.introduction}</p><dl class="hero-metadata"><div><dt>Context</dt><dd>GD 491 final</dd></div><div><dt>Collaboration</dt><dd>Four-person team</dd></div><div><dt>Scope</dt><dd>Space + digital UX</dd></div></dl></header>
       <HeroShowcase />
       </div>
       <ProjectMetadata items={[
@@ -39,6 +39,7 @@ const root = import.meta.env.BASE_URL;
       {cs.sections.map((section) => <ProcessSection {...section}>
         {section.media === 'flow' && <ArtifactFigure asset={communityAssets.flow} />}
         {section.media === 'sketch' && <ArtifactFigure asset={communityAssets.sketch} />}
+        {section.media === 'space' && <ArtifactFigure asset={communityAssets.space} />}
         {section.media === 'comparison' && <DesignComparison before={communityAssets.midEvents} after={communityAssets.events} beforeLabel="01 / Structure" afterLabel="02 / Visual development" />}
         {section.media === 'screens' && <ScreenSequence />}
       </ProcessSection>)}

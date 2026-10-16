@@ -39,3 +39,7 @@ Implementation review is stacked on docs/portfolio-discovery (PR #1), which rema
 ## Community Spaces assignment — 2026-10-16
 
 The owner explicitly requested a dedicated Community Spaces page and large homepage feature using authentic supplied sources. This authorizes `/work/community-spaces/` and its review-only content, not publication of other candidates. Shared team contribution was confirmed by the owner. See COMMUNITY_SPACES.md for sources, validation, and unresolved rights/content issues. Work is on a separate feature branch stacked on PR #2; neither merge nor deployment is authorized. No flagship status is assigned beyond the requested feature.
+
+## Full Community Spaces review — 2026-10-16
+
+Owner approved the staggered hero as visual direction and requested the complete case-study experience. Preserve authentic screen composition/editorial styling; KIBS is a secondary label. Research, problem definition, physical/digital concept, flow, evolution, deliverables, and reflection are now represented with source notes. Full desktop/mobile capture sequences are documented in COMMUNITY_SPACES.md. No production or merge approval is implied.

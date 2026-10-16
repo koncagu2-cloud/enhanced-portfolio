@@ -23,6 +23,7 @@ export const projectSchema = z.object({
   caseStudy: z.object({
     slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
     headline: z.string().min(1),
+    introduction: z.string().min(1),
     context: z.string().min(1),
     role: z.string().min(1),
     team: z.array(z.string().min(1)).min(1),
@@ -33,7 +34,7 @@ export const projectSchema = z.object({
       paragraphs: z.array(z.string().min(1)).min(1),
       points: z.array(z.string().min(1)).default([]),
       sourceNote: z.string().min(1),
-      media: z.enum(['flow', 'sketch', 'comparison', 'screens']).optional(),
+      media: z.enum(['flow', 'sketch', 'space', 'comparison', 'screens']).optional(),
     })).min(1),
   }).optional(),
   evidence: z.array(evidenceSchema),

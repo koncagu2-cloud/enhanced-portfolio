@@ -4,8 +4,10 @@ import confirmation from '../assets/community-spaces/confirmation-hi-fi.png';
 import midEvents from '../assets/community-spaces/events-mid-fi.png';
 import flow from '../assets/community-spaces/task-flow.png';
 import sketch from '../assets/community-spaces/lo-fi-sketch.png';
+import space from '../assets/community-spaces/space-sketches.webp';
 
 export const communityAssets = {
+  space: { image: space, alt: 'Original collage of Katelyn, Illiana, Boran, and Suleyman’s physical-space sketches, exploring study seating, shared event areas, a stage, market, and outdoor gathering spaces.', caption: 'Four teammates, a shared brief. Original spatial explorations preserved together as presented in class.', source: 'Final class presentation · page 10' },
   home: { image: home, alt: 'Community Spaces prototype home screen with a calendar, illustrative occupancy count, Events button, and bottom navigation.', caption: 'Home / high fidelity. All counts and names are illustrative prototype content.', source: 'Figma · Home Page · 212:109' },
   events: { image: events, alt: 'High-fidelity Community Spaces Events screen showing study, game, coffee, and movie event entries with images, dates, descriptions, and detail arrows.', caption: 'Events / high fidelity. Event details are sample interface content.', source: 'Figma · Events Page · 214:237' },
   confirmation: { image: confirmation, alt: 'Community Spaces registration confirmation concept with a checkmark and Continue Shopping, Add to Calendar, and Home Page actions.', caption: 'Confirmation / high fidelity. A designed state, not a record of a real registration.', source: 'Figma · Confirmation Page · 214:4' },

@@ -12,11 +12,14 @@ test('homepage feature leads to the source-backed collaborative review case stud
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Community Spaces');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow');
   await expect(page.locator('.project-metadata')).toContainText('Katelyn Jewett, Illiana Gonzalez, Boran Erdogan, Suleyman Koncagul');
-  await expect(page.locator('.project-metadata')).toContainText('Shared research');
+  await expect(page.locator('.project-metadata')).toContainText('shared across the team');
   await expect(page.locator('#research')).toContainText('approximately 9 out of 12');
   await expect(page.locator('#research')).toContainText('findings reported in the class materials');
   await expect(page.locator('#outcomes')).toContainText('do not establish a public launch');
   await expect(page.locator('#next-steps')).toContainText('proposed tasks, not completed tests');
+  await expect(page.locator('#problem-definition')).toContainText('design challenge');
+  await expect(page.locator('#physical-digital img')).toBeAttached();
+  await expect(page.locator('#reflection')).toContainText('interpretation', { ignoreCase: true });
   await expect(page.locator('body')).not.toContainText('www.figma.com/api/mcp/asset');
   expect((await request.get(path)).status()).toBe(200);
   expect((await request.get('/work/pure-michigan/')).status()).toBe(404);
@@ -43,19 +46,19 @@ test('case-study anchors, keyboard skip link, and return navigation work', async
 test('authentic image exports load with meaningful descriptions and intact proportions', async ({ page, request }) => {
   await page.goto(path);
   const images = page.locator('main img');
-  await expect(images).toHaveCount(10);
+  await expect(images).toHaveCount(11);
   for (const img of await images.all()) {
     await img.scrollIntoViewIfNeeded();
     await expect(img).toHaveJSProperty('complete', true);
-    await expect(img).toHaveAttribute('alt', /Community Spaces|Grayscale|Team task-flow|Hand-drawn/);
+    await expect(img).toHaveAttribute('alt', /Community Spaces|Grayscale|Team task-flow|Hand-drawn|Original collage/);
     expect(await img.evaluate((node: HTMLImageElement) => node.naturalWidth > 0 && Math.abs(node.getBoundingClientRect().width / node.getBoundingClientRect().height - node.naturalWidth / node.naturalHeight) < .01)).toBe(true);
     const src = await img.getAttribute('src');
-    expect(src).toMatch(/^\/_astro\/.+\.png$/);
+    expect(src).toMatch(/^\/_astro\/.+\.(png|webp)$/);
     const response = await request.get(src!);
     expect(response.status()).toBe(200);
-    expect(response.headers()['content-type']).toContain('image/png');
+    expect(response.headers()['content-type']).toContain(src!.endsWith('.webp') ? 'image/webp' : 'image/png');
   }
-  await expect(page.locator('.process-content figcaption a')).toHaveCount(7);
+  await expect(page.locator('.process-content figcaption a')).toHaveCount(8);
 });
 
 test('desktop and narrow layouts retain readable figures and comparison without overflow', async ({ page }) => {
@@ -70,6 +73,12 @@ test('desktop and narrow layouts retain readable figures and comparison without 
     await page.evaluate(() => scrollTo(0, 0));
     if (width === 390 || width === 1440) {
       await page.screenshot({ path: `test-results/community-${width}.png`, fullPage: true });
+      await page.screenshot({ path: `test-results/community-full-${width}.jpg`, fullPage: true, quality: 40 });
+      const height = await page.evaluate(() => document.documentElement.scrollHeight);
+      const stripHeight = width === 1440 ? 1200 : 2000;
+      for (let y = 0, part = 1; y < height; y += stripHeight, part++) {
+        await page.screenshot({ path: `test-results/community-full-${width}-part-${String(part).padStart(2, '0')}.jpg`, clip: { x: 0, y, width, height: Math.min(stripHeight, height - y) }, fullPage: true, quality: 60 });
+      }
       await page.screenshot({ path: `test-results/community-cover-${width}.jpg`, quality: 80 });
       await page.locator('.case-intro').screenshot({ path: `test-results/community-hero-${width}.jpg`, quality: 75 });
       await page.locator('.design-comparison').screenshot({ path: `test-results/community-comparison-${width}.jpg`, quality: 80 });

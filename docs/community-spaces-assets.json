@@ -46,6 +46,16 @@
         "page": 8,
         "extraction": "Original embedded image; PNG encoding, no redrawing"
       }
+    },
+    "src/assets/community-spaces/space-sketches.webp": {
+      "sha256": "3b45537cb4fab865a75ebc332ce35fc7e4bf97a0c639bb812fdc82addc076012",
+      "source": {
+        "document": "GD 491 Case Study for Community Spaces.pdf",
+        "page": 10,
+        "embeddedImage": "Image11.jpg",
+        "originalSha256": "5a3e04a2187fbbae4d698beadf7b8eaa6d691aeb501cce03a620dfc467e6efab",
+        "extraction": "Original team sketch collage; WebP web encoding only, no cropping, redrawing, or rearrangement"
+      }
     }
   }
 }
