@@ -55,7 +55,7 @@ test('authentic image exports load with meaningful descriptions and intact propo
     expect(response.status()).toBe(200);
     expect(response.headers()['content-type']).toContain('image/png');
   }
-  await expect(page.locator('figcaption a')).toHaveCount(10);
+  await expect(page.locator('.process-content figcaption a')).toHaveCount(7);
 });
 
 test('desktop and narrow layouts retain readable figures and comparison without overflow', async ({ page }) => {
@@ -71,6 +71,7 @@ test('desktop and narrow layouts retain readable figures and comparison without 
     if (width === 390 || width === 1440) {
       await page.screenshot({ path: `test-results/community-${width}.png`, fullPage: true });
       await page.screenshot({ path: `test-results/community-cover-${width}.jpg`, quality: 80 });
+      await page.locator('.case-intro').screenshot({ path: `test-results/community-hero-${width}.jpg`, quality: 75 });
       await page.locator('.design-comparison').screenshot({ path: `test-results/community-comparison-${width}.jpg`, quality: 80 });
     }
     await page.goto('/');

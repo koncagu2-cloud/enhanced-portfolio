@@ -9,6 +9,7 @@ import ProcessSection from '../../components/case-study/ProcessSection.astro';
 import ArtifactFigure from '../../components/case-study/ArtifactFigure.astro';
 import DesignComparison from '../../components/case-study/DesignComparison.astro';
 import ScreenSequence from '../../components/case-study/ScreenSequence.astro';
+import HeroShowcase from '../../components/case-study/HeroShowcase.astro';
 import { communityAssets } from '../../data/community-spaces-assets';
 import '../../styles/case-study.css';
 
@@ -25,8 +26,9 @@ const root = import.meta.env.BASE_URL;
 <BaseLayout title="Community Spaces — Collaborative UX case study" description="A collaborative GD 491 class concept for a community space and event-registration app. Authentic team artifacts, reported class research, and proposed next steps; review only.">
   <div id="top"><SiteHeader />
     <main id="main" class="container case-study" tabindex="-1">
-      <header class="case-hero"><a class="case-back" href={`${root}#work`}>← Back to selected work</a><p class="micro">{cs.context} / Review case study</p><h1>{project.data.title}</h1><p class="case-deck">{cs.headline}</p><p class="case-scope">A collaborative concept and prototype. Reported class research, authentic team artifacts, and proposed future evaluation. Not a launched service.</p></header>
-      <div class="case-cover" aria-label="High-fidelity project screens"><ScreenSequence /></div>
+      <div class="case-intro"><header class="case-hero"><a class="case-back" href={`${root}#work`}>← Back to selected work</a><p class="micro">{cs.context} / UX & interaction design</p><h1>{project.data.title}</h1><p class="case-deck">{cs.headline}</p><p class="case-scope">A collaborative concept pairing a welcoming community space with KIBS, an app designed to help students and community members discover events and sign up.</p></header>
+      <HeroShowcase />
+      </div>
       <ProjectMetadata items={[
         { label: 'Project', value: cs.context },
         { label: 'Team', value: cs.team.join(', ') },

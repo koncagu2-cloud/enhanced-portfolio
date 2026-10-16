@@ -70,3 +70,11 @@ Desktop and mobile covers, comparison layouts, full desktop page, and homepage f
 - Manual screen-reader, Safari/Firefox, real-device, and performance audits remain pending.
 - Review-only/noindex is not privacy protection. Repository materials are public; no confidential raw research or full PDF was added.
 - This PR depends on PR #2. Keep it draft and retarget/recheck after the base merges; no merge is authorized.
+
+## Hero refinement — 2026-10-16
+
+At the owner's request, replaced the defensive introductory paragraph with a concise explanation of the collaborative concept and purpose. The new HeroShowcase gives the authentic Events screen central prominence, with Home and Confirmation staggered alongside it on desktop and below it on mobile. Original typography/navigation and generous editorial spacing are retained. The artifact files were not changed; source hashes still pass. Figma read access to the supplied file was reconfirmed.
+
+The hero now introduces the work; factual status, shared team contribution, research limits, illustrative prototype data, and proposed testing remain in the metadata and narrative. Review-only/noindex remains intact. No launch or validation claims were added. Updated complete hero desktop/mobile and dark screenshots replace the prior captures at the same review paths above.
+
+Verification after refinement: Astro/TypeScript check (0 errors/warnings/hints), static build, 7 content/provenance tests, and all 13 browser tests passed. Automated accessibility checks and 320/390/768/1440px overflow checks passed; desktop/mobile compositions were visually inspected. No merge or deployment.
