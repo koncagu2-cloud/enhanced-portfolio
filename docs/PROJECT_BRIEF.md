@@ -1,6 +1,6 @@
 # Portfolio V2 — Shared Project Brief for Codex and ChatGPT
 
-Status: Planning / discovery. Last updated: 2026-10-16.
+Status: Bounded grayscale homepage implementation authorized; evidence discovery continues. Last updated: 2026-10-16.
 Owner: Suleyman Koncagul. Repository: koncagu2-cloud/enhanced-portfolio.
 Reference only: koncagu2-cloud/portfolio (do not modify the old portfolio).
 
@@ -8,7 +8,7 @@ Reference only: koncagu2-cloud/portfolio (do not modify the old portfolio).
 
 Build a credible, accessible, polished, maintainable portfolio that makes it easy for UX / Experience Architecture / product design hiring teams to assess Suleyman's ability to investigate a problem, structure information, design interactions, implement accessible interfaces, and evaluate decisions. The goal is interview conversion through evidence, not visual spectacle.
 
-Positioning **draft**, subject to verification against actual work:
+Primary positioning **approved**: UX / Product Designer. Supporting value-proposition copy remains draft, subject to verification against actual work:
 > I turn ambiguity into understandable, accessible digital experiences — from research and information architecture through interaction and implementation.
 
 Audience: UX/UI, UX research, product design, and AI-adjacent UX recruiters/hiring managers. Do not imply AI product experience without supporting work.
@@ -89,3 +89,16 @@ Phase 7 — Deploy only after review.
 ChatGPT's review supports the documentation structure and proposed Astro + TypeScript direction in PR #1. Suleyman has explicitly asked that D04–D09 remain proposed until he approves them; support from ChatGPT is not approval to implement. Keep PR #1 open and resolve the highest-priority questions before merging or starting frontend work.
 
 Agreed priorities: verify project evidence, attribution, and resume accuracy before implementation. Evidence provenance is a first-class case-study requirement: connect factual claims to sources, distinguish original artifacts from redraws, document personal/team contribution, verification status, publication permission, and limitations. The exact schema and technical architecture remain under review.
+
+## Approved design direction and bounded implementation — 2026-10-16
+
+This later instruction supersedes the planning-only hold for the following scope only:
+
+- Positioning: UX / Product Designer.
+- Style: 80% Editorial Minimalism, 20% Technical Precision; light-first with optional dark mode.
+- Homepage: Hero → Selected Work → Design Approach → About → Contact.
+- Navigation: Work, About, Resume, Contact.
+- Large typography, generous whitespace, restrained color, precise alignment, authentic artifacts, responsive and keyboard-friendly interaction.
+- Implement a grayscale homepage using Astro, TypeScript, and content collections on a separate branch; mark temporary content provisional and open a draft PR.
+
+Evidence, attribution, resume accuracy, and artifact permissions remain unresolved. Do not invent or imply research, outcomes, or approved ownership. PR #1 stays open; implementation has a separate stacked draft PR. No production deployment, domain changes, or modifications to the old portfolio. See IMPLEMENTATION_M1.md for scope, component/layout/theme choices, and validation results.

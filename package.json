@@ -1,0 +1,29 @@
+{
+  "name": "enhanced-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "test": "playwright test",
+    "test:content": "node --import tsx --test tests/content.test.ts"
+  },
+  "dependencies": {
+    "astro": "7.4.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.64.1",
+    "@types/node": "^24.19.2",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
