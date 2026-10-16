@@ -53,3 +53,17 @@ test('Community Spaces originals match provenance hashes and durable source refe
     assert.ok(!JSON.stringify(entry.source).includes('/api/mcp/asset/'));
   }
 });
+
+test('D2L review artifacts have stable source nodes and unchanged recorded hashes', () => {
+  const manifest = JSON.parse(readFileSync('docs/d2l/assets.json', 'utf8'));
+  const assets = Object.entries(manifest.assets) as [string, { sha256: string; source: { fileKey: string; nodeId: string; exportSha256: string } }][];
+  assert.equal(assets.length, 11);
+  assert.equal(new Set(assets.map(([, entry]) => entry.source.nodeId)).size, 11);
+  for (const [path, entry] of assets) {
+    assert.equal(createHash('sha256').update(readFileSync(path)).digest('hex'), entry.sha256);
+    assert.equal(entry.source.fileKey, 'piRHnDp4bwoVkKMo1mHSt7');
+    assert.match(entry.source.nodeId, /^\d+:\d+$/);
+    assert.match(entry.source.exportSha256, /^[a-f0-9]{64}$/);
+    assert.ok(!JSON.stringify(entry).includes('/api/mcp/asset/'));
+  }
+});
