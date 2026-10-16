@@ -1,6 +1,6 @@
 # D2L Redesign — case-study proposal and draft copy
 
-**Status: proposed, awaiting design/content approval. Analysis only.** Read [ANALYSIS.md](ANALYSIS.md) for original observations, evidence chains, inspection limits, and unresolved questions. No case-study route, website assets, frontend, or homepage changes are authorized by this document.
+**Status: approved in principle; implementation awaits complete team-credit confirmation. Analysis only until that confirmation.** Read [ANALYSIS.md](ANALYSIS.md) for original observations, evidence chains, inspection limits, and unresolved questions. No case-study route, website assets, frontend, or homepage changes are authorized by this document.
 
 ## Recommended positioning
 
@@ -139,10 +139,18 @@ Inspected existing components and source: BaseLayout, SiteHeader/SiteFooter, Pro
 
 ## Approval decisions and missing information
 
-1. Approve student submission as the main thread with a concise instructor setup/rubric counterpart.
-2. Choose the proposed two-user-group desktop hero or the single submission-state alternative.
+1. **Approved in principle:** student submission as the main thread with a concise instructor setup/rubric counterpart.
+2. **Approved in principle:** the proposed dual-desktop, student/instructor hero.
 3. Confirm the “Final Student Hi-fi Prototype” page is the preferred version and approve the authentic visual shortlist.
 4. Confirm full team credit, course/term, completed evaluation and public-safe research/asset permissions.
 5. Review the source-backed interpretation in D1–D3, especially the partial response to post-submit replacement. Do not strengthen it into a solved problem.
 
 After those decisions: scope an implementation milestone using approved copy and cleared original exports, with separate review and the existing noindex guard. That milestone is not started here. No source-screen repairs, frontend changes, merge or deployment.
+
+## Owner review decision — 2026-10-16
+
+The owner reviewed PR #4 with ChatGPT and approved in principle the six-chapter narrative, student-first storytelling, supporting instructor sequence, and dual-desktop hero. Preserve evidence-based language and documented prototype limitations. Do not imply launch, completed usability testing, or measurable improvements.
+
+**Implementation gate:** await explicit confirmation of the complete team roster, including Alana Alexander. The existing confirmation of shared work with Gabe Bustillo and Benji Fajardo does not resolve Alana's credit. No implementation branch or frontend work begins before the roster is confirmed.
+
+Once credits are confirmed, the owner authorizes a separate implementation branch and draft PR using this approved proposal, authentic Figma assets, and the existing portfolio design system. Omit or qualify unsupported facts; course/term and evaluation details remain unconfirmed and must not become claims by default. PR #4 stays open/draft. Do not merge, deploy, or modify Community Spaces or the original live portfolio. Preserve noindex.
