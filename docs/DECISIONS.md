@@ -19,3 +19,11 @@ Tradeoff for D04: Astro introduces a framework to learn. A React + Vite implemen
 ## Review process
 
 Record Suleyman's explicit approval or revision against each proposed ID before implementation. ChatGPT can suggest changes through GitHub; coordinate ownership of the same files to avoid simultaneous edits. Each review should state its branch/commit and unresolved questions. Never put interview transcripts, participant identifiers, or restricted source material into this public repository; publish only owner-approved, redacted evidence.
+
+## Review checkpoint — 2026-10-16
+
+Suleyman relayed ChatGPT's review of PR #1: ChatGPT supports the documentation structure and proposed Astro + TypeScript direction. This is review support, not Suleyman's architectural approval. D04–D09 remain Proposed. PR #1 must remain open; resolve the highest-priority questions before merging or beginning frontend work.
+
+Confirmed priority: project evidence, attribution, and accurate resume information come before implementation. Evidence provenance is a first-class part of the case-study content model. No code or dependency changes are authorized by this checkpoint.
+
+Completed: initial source/evidence audit, live homepage reference check, and publication of the planning docs in PR #1. Next: gather owner answers and source artifacts for the P0 questions in OPEN_QUESTIONS.md.
