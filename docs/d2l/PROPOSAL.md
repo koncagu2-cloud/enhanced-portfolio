@@ -1,6 +1,6 @@
 # D2L Redesign — case-study proposal and draft copy
 
-**Status: approved in principle; implementation awaits complete team-credit confirmation. Analysis only until that confirmation.** Read [ANALYSIS.md](ANALYSIS.md) for original observations, evidence chains, inspection limits, and unresolved questions. No case-study route, website assets, frontend, or homepage changes are authorized by this document.
+**Status: proposal approved in principle; full roster confirmed on 2026-10-16. Implementation proceeds separately on feat/d2l-case-study.** Read [ANALYSIS.md](ANALYSIS.md) for original observations, evidence chains, inspection limits, and unresolved questions. No case-study route, website assets, frontend, or homepage changes are authorized by this document.
 
 ## Recommended positioning
 
@@ -154,3 +154,7 @@ The owner reviewed PR #4 with ChatGPT and approved in principle the six-chapter 
 **Implementation gate:** await explicit confirmation of the complete team roster, including Alana Alexander. The existing confirmation of shared work with Gabe Bustillo and Benji Fajardo does not resolve Alana's credit. No implementation branch or frontend work begins before the roster is confirmed.
 
 Once credits are confirmed, the owner authorizes a separate implementation branch and draft PR using this approved proposal, authentic Figma assets, and the existing portfolio design system. Omit or qualify unsupported facts; course/term and evaluation details remain unconfirmed and must not become claims by default. PR #4 stays open/draft. Do not merge, deploy, or modify Community Spaces or the original live portfolio. Preserve noindex.
+
+## Team gate resolved — 2026-10-16
+
+The owner explicitly confirmed the complete roster: Suleyman Koncagul, Gabe Bustillo, Benji Fajardo, and Alana Alexander. All four collaborated throughout. This satisfies the requested prerequisite and activates the previously authorized separate implementation branch/draft PR. The six-chapter proposal, student-first story, supporting instructor work, and dual-desktop hero remain the approved direction. Course/term, evaluation evidence, and third-party launch rights remain unconfirmed; do not invent them. See [IMPLEMENTATION.md](IMPLEMENTATION.md) for the bounded implementation and checks. PR #4 remains open/draft; no merge or deployment.

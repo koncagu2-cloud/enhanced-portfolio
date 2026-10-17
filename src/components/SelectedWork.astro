@@ -5,7 +5,7 @@ import ProjectRow from './ProjectRow.astro';
 import CommunitySpacesFeature from './CommunitySpacesFeature.astro';
 import '../styles/case-study.css';
 // Review entries appear only on this explicitly provisional, noindex homepage.
-// Drafts are omitted. Only the commissioned Community Spaces review has a case-study route.
+// Drafts are omitted. Commissioned Community Spaces and D2L reviews have case-study routes.
 const projects = await getCollection('projects', ({ data }) => data.publicationStatus === 'review');
 projects.sort((a, b) => a.data.order - b.data.order);
 const feature = projects.find((project) => project.id === 'community-spaces' && project.data.caseStudy);
@@ -13,7 +13,7 @@ const entries = await Promise.all(projects.filter((project) => project.id !== fe
 ---
 <section id="work" class="section" aria-labelledby="work-heading">
   <SectionHeading number="01" title="Selected work" id="work-heading" note="Selection in progress" />
-  <p class="section-intro">A collaborative class project, followed by a working shortlist. This portfolio remains under review; the case study distinguishes reported findings from proposed next steps.</p>
+  <p class="section-intro">Collaborative project work and a developing shortlist. These review case studies connect original artifacts with design decisions and proposed next steps.</p>
   {feature && <CommunitySpacesFeature project={feature} />}
   <div class="project-list">{entries.map(({ project, Content }, i) => <ProjectRow project={project} number={i + 1}><Content /></ProjectRow>)}</div>
 </section>

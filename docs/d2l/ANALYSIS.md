@@ -1,6 +1,6 @@
 # D2L Redesign — original-source analysis
 
-Reviewed 2026-10-16. **Discovery and planning only; implementation requires design approval.** This document analyzes the supplied class-project file, not the current production D2L product. All claims below concern the team's recorded observations or proposal. Nothing establishes an official release, measured improvement, or business outcome.
+Reviewed 2026-10-16. **Original discovery record. Subsequent owner approval and complete four-person roster confirmation authorize the separate implementation described in IMPLEMENTATION.md.** This document analyzes the supplied class-project file, not the current production D2L product. All claims below concern the team's recorded observations or proposal. Nothing establishes an official release, measured improvement, or business outcome.
 
 ## Reading guide and attribution
 
@@ -135,3 +135,15 @@ Work is documentation-only on `docs/d2l-discovery`, based on the current Communi
 ### Documentation validation
 
 All 63 distinct node references in this analysis and all 24 in the proposal were matched to inspected source metadata or read-only node results. All 36 Figma links use the supplied file and known node IDs. Relative documentation links resolve. The committed diff is limited to these two planning documents; application source, assets, tests and review configuration are byte-for-byte unchanged from the base. `git diff --check` passed. Build/browser/accessibility suites were not rerun for this documentation-only phase. Prototype reactions were inspected as source data; no real upload, email, publication, user evaluation or accessibility capability was tested.
+
+### Attribution update — 2026-10-16
+
+The owner subsequently confirmed Alana Alexander alongside Suleyman Koncagul, Gabe Bustillo, and Benji Fajardo. Complete shared team attribution is resolved; the uncertainty in the original analysis above is historical. Course/term and completed evaluation remain unconfirmed. Original observations and prototype limitations remain unchanged.
+
+## Editorial refinement record — 2026-10-16
+
+The owner approved the complete desktop direction and requested presentation/editorial refinement. The portfolio now labels three authentic proposed student states: Find Assignment (554:1123), Review Selected File (554:1377), and Check Submission Record (554:1169). These are narrative task order, not a verified fully connected prototype. The assignment frame shows a located assignment with requirements; it is not a new search/list screen.
+
+The large defects panel was removed from the main narrative. Reflection retains submission recovery (pre-submit removal versus unestablished post-submit replacement), status consistency (Not Submitted beneath confirmation), and incomplete prototype connections (missing onward assignment link and separate history path). **The full original technical findings above remain retained**, including empty-file Submit, inconsistent dates/points, the student New Announcement control, unverified role boundaries, file validation/errors, accessibility behavior, and lack of operating upload/email/publication services.
+
+Attribution verification basis: the assistant explicitly asked whether credits should list Suleyman Koncagul, Gabe Bustillo, Benji Fajardo, and Alana Alexander; the owner answered **“Yes, credit all four.”** This is direct owner confirmation consistent with Alana-labeled source artifacts, not independent university verification. Shared contribution is retained, with no individual leadership inferred. Course/term and completed evaluation remain unconfirmed.
