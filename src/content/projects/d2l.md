@@ -63,15 +63,15 @@ caseStudy:
       title: Three questions to guide the redesign.
       paragraphs:
         - Our heuristic evaluation recorded concerns about navigation and information hierarchy, control over submitted files, and the structure of assignment and rubric creation.
-        - These evaluator observations gave us concrete questions to explore. The proposed screens show design responses; they do not establish that each problem was solved.
-      sourceNote: Original evaluator notes · Figma 16:2, 19:10, 18:2, and 9:6. These concern the class-project baseline, not an audit of today's D2L.
+        - These observations gave us concrete questions about context, file review, and grading criteria to explore.
+      sourceNote: Team heuristic evaluation of the class-project baseline · Figma 16:2, 19:10, 18:2, and 9:6.
     - id: workflows
       kicker: 03 / Mapping Student & Instructor Workflows
       title: Follow the work from intent to next step.
       paragraphs:
         - For students, we mapped the journey from selecting a course to reviewing a chosen file and receiving submission confirmation. File selection, review, and submission appear as separate states.
         - The instructor flow connects assignment details, grading criteria, and supporting files with publishing, grading, and feedback. Looking at both journeys kept the work focused on coursework as a shared process.
-      sourceNote: Original team diagrams · Figma 123:4 and 123:3. They describe intended paths; error and recovery branches need further exploration.
+      sourceNote: Original team task maps · Figma 123:4 and 123:3.
       media: [flow]
     - id: exploration
       kicker: 04 / Exploring Design Solutions
@@ -79,22 +79,21 @@ caseStudy:
       paragraphs:
         - Early sketches established course, assignment, and upload layouts before the visual direction was resolved. Later designs used a green-and-white palette, repeated navigation labels, and grouped content areas.
         - Some iterations changed the information within screens more than their arrangement. The final assignment view retained the earlier structure while adding populated directions and comment-editor controls. The comparison below shows that specific progression.
-      sourceNote: Original sketch nodes 160:4 and 161:2; earlier assignment 481:1306 and final assignment 554:1123. These are project iterations, not production D2L before-and-after screenshots.
+      sourceNote: Original sketches · Figma 160:4 and 161:2. Earlier/final project iterations · 481:1306 and 554:1123.
       media: [sketch, comparison]
     - id: experience
       kicker: 05 / The Redesigned Experience
       title: Make the chosen file and the next action visible.
       paragraphs:
-        - The student concept keeps assignment context visible through a named heading and a summary of due date, points, submission type, and status. A file-selection sequence leads to review with the chosen filename, a removal control, and Submit. A separate history view explores how completion could be recorded.
-        - For instructors, the proposal separates assignment overview from grading and submission settings. The rubric maker labels criteria, headers, and score, with template and draft actions.
-      sourceNote: Student review/history · Figma 554:1377 and 554:1169. Instructor overview/settings/rubric · 274:414, 274:488, and 286:415. Dates, files, grades, and course content are illustrative prototype material.
+        - The student journey centers on three questions — what do I need to submit, which file have I chosen, and where can I check the record? The proposed screens bring those decisions into view.
+      sourceNote: Student assignment/review/history · Figma 554:1123, 554:1377, and 554:1169. Instructor overview/settings/rubric · 274:414, 274:488, and 286:415.
       media: [screens]
     - id: reflection
       kicker: 06 / Reflection & Next Steps
       title: A clearer proposal. Questions still worth testing.
       paragraphs:
         - The project connects evaluation of an existing product with the decisions needed to find, submit, and manage coursework. Its strongest thread is the relationship between those tasks and the interface states the team explored.
-        - Future evaluation should examine whether people understand the navigation, can recover from choosing the wrong file, and can distinguish saving, submitting, and publishing. These are proposed next steps, not completed testing or measured improvements.
-      sourceNote: Project-level reflection and proposed evaluation, grounded in the source analysis. No official release, usability-test result, or business outcome is claimed.
+        - Three limitations guide the next evaluation — submission recovery, status consistency, and incomplete prototype connections. These proposed next steps would examine the student journey and instructor setup, including access needs.
+      sourceNote: Project-level reflection and proposed evaluation, grounded in the original artifacts.
 ---
 An original four-person MSU redesign concept. Review the case study for source-backed design decisions, authentic team artifacts, and documented prototype limitations. Third-party asset rights and some project details remain under review.

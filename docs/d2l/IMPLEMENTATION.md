@@ -58,3 +58,13 @@ Consecutive screenshot strips accommodate connector upload size; single PNGs are
 - Third-party image/icon/institutional/workbook permissions before public launch; Figma visitor-sharing access.
 - Manual screen-reader, Safari/Firefox, physical-device and performance audits remain pending.
 - PR remains stacked on planning PR #4 and the earlier portfolio branches. Retarget/recheck only when upstream changes are authorized. No merge or deployment is authorized.
+
+## Final editorial refinement — 2026-10-16
+
+Focused changes preserve the approved hero, six chapters, typography/navigation/design tokens, original Figma colors, and shared credits. Student presentation now follows a labeled ordered sequence: Find Assignment → Review Selected File → Check Submission Record, using the existing assignment, file-review, and history assets. A short note identifies these as proposed interface states, not a verified connected prototype. The instructor transition relates requirements and grading criteria to what students submit; the rubric visual stays intact.
+
+Removed the standalone technical-defects panel, consolidated the three primary limitations in reflection, and trimmed repeated outcome/validation disclaimers while retaining the clear opening status. Full technical observations and the owner's explicit Alana/team confirmation are preserved in ANALYSIS.md. D2L-only chapter spacing is tighter, with a prominent first student state and consistent neutral sketch mats. Sketches remain uncropped and unmodified, preserving meaningful content, proportions, and full-size links. Native fine detail may require those links on narrow screens; prose and descriptions provide the narrative independently.
+
+Executed after final source changes: `pnpm run check` (0 errors/warnings/hints), `pnpm run build` (four static routes), `pnpm run test:content` (8 passed), and `pnpm test` (20 passed). Axe found no violations in tested D2L light/dark at 320/390/768/1440px. Keyboard/focus/anchors, local links, alt descriptions, all 12 rendered images loading at native proportions (11 unchanged source files), no overflow, no-JavaScript and reduced-motion checks passed. Desktop/mobile/small-mobile screenshots were refreshed, including student-sequence and sketch-framing inspection. Community Spaces full-page captures remain pixel-identical to the original 1440px and 390px baselines; its source and assets are unchanged. No original D2L asset files changed. Diff-whitespace checks passed.
+
+Outstanding manual screen-reader, Safari/Firefox, physical-device, performance, course/date/evaluation evidence, and third-party launch-rights items remain as documented above. No public deployment or merge. Continue in draft PR #5.

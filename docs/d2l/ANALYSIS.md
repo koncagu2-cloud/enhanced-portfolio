@@ -139,3 +139,11 @@ All 63 distinct node references in this analysis and all 24 in the proposal were
 ### Attribution update — 2026-10-16
 
 The owner subsequently confirmed Alana Alexander alongside Suleyman Koncagul, Gabe Bustillo, and Benji Fajardo. Complete shared team attribution is resolved; the uncertainty in the original analysis above is historical. Course/term and completed evaluation remain unconfirmed. Original observations and prototype limitations remain unchanged.
+
+## Editorial refinement record — 2026-10-16
+
+The owner approved the complete desktop direction and requested presentation/editorial refinement. The portfolio now labels three authentic proposed student states: Find Assignment (554:1123), Review Selected File (554:1377), and Check Submission Record (554:1169). These are narrative task order, not a verified fully connected prototype. The assignment frame shows a located assignment with requirements; it is not a new search/list screen.
+
+The large defects panel was removed from the main narrative. Reflection retains submission recovery (pre-submit removal versus unestablished post-submit replacement), status consistency (Not Submitted beneath confirmation), and incomplete prototype connections (missing onward assignment link and separate history path). **The full original technical findings above remain retained**, including empty-file Submit, inconsistent dates/points, the student New Announcement control, unverified role boundaries, file validation/errors, accessibility behavior, and lack of operating upload/email/publication services.
+
+Attribution verification basis: the assistant explicitly asked whether credits should list Suleyman Koncagul, Gabe Bustillo, Benji Fajardo, and Alana Alexander; the owner answered **“Yes, credit all four.”** This is direct owner confirmation consistent with Alana-labeled source artifacts, not independent university verification. Shared contribution is retained, with no individual leadership inferred. Course/term and completed evaluation remain unconfirmed.

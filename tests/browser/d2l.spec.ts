@@ -13,18 +13,22 @@ test('D2L is reachable from selected work with confirmed shared attribution and 
   await expect(page.locator('.project-metadata')).toContainText('shared team work');
   await expect(page.locator('.d2l-status')).toContainText('not an official D2L release');
   await expect(page.locator('.d2l-status')).toContainText('usability testing and measurable improvements are not established');
-  await expect(page.locator('.d2l-limits')).toContainText('replacing a file after submission is not established');
+  await expect(page.locator('#reflection')).toContainText('replacement after submission remains unresolved');
+  await expect(page.locator('.d2l-student-sequence > li .micro')).toHaveText(['01 / Find Assignment', '02 / Review Selected File', '03 / Check Submission Record']);
+  await expect(page.locator('.d2l-sequence-note')).toContainText('not a verified, fully connected prototype');
+  await expect(page.locator('.d2l-limits')).toHaveCount(0);
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow');
   await expect(page.getByRole('navigation', { name: 'Case study sections' }).getByRole('link')).toHaveText(chapters);
 });
 
 test('D2L originals load at native proportions and every local destination resolves', async ({ page, request }) => {
   await page.goto(path);
-  await expect(page.locator('main img')).toHaveCount(11);
+  await expect(page.locator('main img')).toHaveCount(12);
   for (const image of await page.locator('main img').all()) {
     await image.scrollIntoViewIfNeeded();
     await expect(image).toHaveJSProperty('complete', true);
     expect((await image.getAttribute('alt'))!.length).toBeGreaterThan(40);
+    expect(await image.evaluate((node: HTMLImageElement) => { const rect = node.getBoundingClientRect(); return rect.width >= 100 && rect.height >= 100; })).toBe(true);
     expect(await image.evaluate((node: HTMLImageElement) => node.naturalWidth > 0 && Math.abs(node.clientWidth / node.clientHeight - node.naturalWidth / node.naturalHeight) < .02)).toBe(true);
     const response = await request.get((await image.getAttribute('src'))!);
     expect(response.status()).toBe(200);
@@ -55,6 +59,8 @@ test('D2L responsive compositions and full-page review captures', async ({ page 
     await page.evaluate(() => scrollTo(0, 0));
     if (width !== 768) {
       await page.screenshot({ path: `test-results/d2l-full-${width}.png`, fullPage: true });
+      await page.locator('.d2l-student-sequence').screenshot({ path: `test-results/d2l-journey-${width}.jpg`, quality: 70 });
+      await page.locator('.d2l-sketch-grid').screenshot({ path: `test-results/d2l-sketches-${width}.jpg`, quality: 70 });
       await page.locator('.case-intro').screenshot({ path: `test-results/d2l-hero-${width}.jpg`, quality: 70 });
       const height = await page.evaluate(() => document.documentElement.scrollHeight);
       const stripHeight = width === 1440 ? 1200 : 2000;
