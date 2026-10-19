@@ -30,12 +30,12 @@ nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 
 nav a:hover, .site-footer a:hover { text-decoration: underline; }
 .theme-toggle { justify-self: end; background: none; border: 1px solid var(--rule); border-radius: 0; min-height: 44px; padding: .5rem .75rem; display: inline-flex; align-items: center; gap: .75rem; font-size: .7rem; cursor: pointer; }
 .theme-indicator { flex-shrink: 0; width: .55rem; height: .55rem; background: var(--ink); border-radius: 50%; }
-.hero { padding-top: clamp(2.5rem, 4vw, 4rem); padding-bottom: clamp(3rem, 6vw, 5rem); }
-.hero-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; color: var(--muted); margin-bottom: 2.4rem; }
+.hero { padding-top: clamp(1.5rem, 2.5vw, 2.5rem); padding-bottom: clamp(2rem, 4vw, 3rem); }
+.hero-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; color: var(--muted); margin-bottom: 1.5rem; }
 .hero-meta > span:first-child { font: .85rem/1.5 Arial, Helvetica, sans-serif; letter-spacing: .03em; }
-.hero h1 { font-size: clamp(3.4rem, 8.5vw, 8.4rem); letter-spacing: -.075em; line-height: .99; max-width: 15ch; }
+.hero h1 { font-size: clamp(3.4rem, 7vw, 6.75rem); letter-spacing: -.075em; line-height: .99; max-width: 15ch; }
 .hero h1 em { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.07em; }
-.hero-bottom { display: flex; align-items: end; justify-content: space-between; gap: 3rem; margin-top: 3.25rem; }
+.hero-bottom { display: flex; align-items: end; justify-content: space-between; gap: 3rem; margin-top: 2rem; }
 .hero-bottom p { max-width: 38rem; margin-top: .65rem; color: var(--muted); font-size: clamp(1rem, 1.4vw, 1.2rem); line-height: 1.6; }
 .content-note { font: .65rem/1.5 'Courier New', monospace; letter-spacing: .03em; color: var(--muted); }
 .text-link { display: inline-flex; justify-content: space-between; align-items: center; gap: clamp(.75rem, 2vw, 2rem); max-width: 100%; min-width: 0; overflow-wrap: anywhere; min-height: 44px; padding-block: .6rem; border-bottom: 1px solid var(--ink); text-decoration: none; font-size: .8rem; flex-shrink: 1; }
@@ -97,8 +97,8 @@ summary { display: list-item; cursor: pointer; padding-block: .65rem; width: fit
   nav ul { gap: .75rem; }
   .hero-meta { gap: 1rem; font-size: .6rem; }
   .desktop-break { display: none; }
-  .hero h1 { max-width: 10ch; font-size: clamp(3rem, 13vw, 5rem); }
-  .hero-bottom { margin-top: 2rem; }
+  .hero h1 { max-width: 13ch; font-size: clamp(2.65rem, 11vw, 4.25rem); }
+  .hero-bottom { margin-top: 1.5rem; }
   .section { padding-block: 1.5rem 3.5rem; }
   .section-heading { grid-template-columns: 2rem 1fr; gap: .5rem; }
   .section-note { grid-column: 2; margin-top: .5rem; font-size: .6rem; }
