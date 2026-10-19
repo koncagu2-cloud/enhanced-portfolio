@@ -1,12 +1,12 @@
 ---
 import SectionHeading from './SectionHeading.astro';
 const principles = [
-  { title: 'Understand the context.', body: 'Start with the problem, the people involved, and what the evidence can actually tell us.' },
-  { title: 'Make the structure clear.', body: 'Organize information around meaningful tasks, then make the next step easier to understand.' },
-  { title: 'Make the next question explicit.', body: 'Distinguish what the evidence shows from what still needs evaluation. Each case study closes with proposed next steps.' },
+  { title: 'Understand the problem.', body: 'Examine the existing experience, gather relevant evidence, and identify the questions that matter.' },
+  { title: 'Structure the experience.', body: 'Organize information and interactions around the tasks people need to complete.' },
+  { title: 'Consider how it works.', body: 'Connect interface decisions with accessibility, responsive behavior, and questions for evaluation.' },
 ];
 ---
 <section id="approach" class="section" aria-labelledby="approach-heading">
-  <SectionHeading number="02" title="Design approach" id="approach-heading" note="Context / Structure / Evaluation" />
+  <SectionHeading number="02" title="Design approach" id="approach-heading" note="Evaluation / Structure / Interaction" />
   <div class="approach-grid">{principles.map((item, i) => <div class="approach-item"><span class="micro">0{i + 1}</span><h3>{item.title}</h3><p>{item.body}</p></div>)}</div>
 </section>

@@ -7,8 +7,8 @@ const href = `${import.meta.env.BASE_URL}work/${project.data.caseStudy!.slug}/`;
 ---
 <article class="project-feature d2l-feature" aria-labelledby="d2l-feature-heading">
   <div class="feature-heading">
-    <div><p class="micro">01 / Assignment workflows · Collaborative redesign</p><h3 id="d2l-feature-heading">{project.data.title}</h3><p>What do I need to submit, which file have I chosen, and where can I check the record? Our team explored these questions through evaluation, task flows, and interface concepts.</p></div>
-    <span class="status-label">Academic proposal · Not launched</span>
+    <div><p class="micro">01 / Assignment workflows · Collaborative redesign</p><h3 id="d2l-feature-heading">{project.data.title}</h3><p>Exploring assignment requirements, file review, and submission records through heuristic evaluation, task mapping, and interface design.</p></div>
+    <span class="status-label">Collaborative academic project · Interface prototype</span>
   </div>
   <a class="feature-artifacts d2l-feature-artifacts" href={href} aria-label="View the D2L Redesign case study">
     {[d2lAssets.file, d2lAssets.history].map(asset => <img src={asset.image.src} width={asset.image.width} height={asset.image.height} alt={asset.alt} loading="lazy" decoding="async" />)}

@@ -11,7 +11,7 @@ const community = projects.find(project => project.id === 'community-spaces');
 ---
 <section id="work" class="section" aria-labelledby="work-heading">
   <SectionHeading number="01" title="Selected work" id="work-heading" note="Two collaborative university projects" />
-  <p class="section-intro">Exploring assignment submission in D2L and connecting a community space with event discovery and registration.</p>
+  <p class="section-intro">Two collaborative projects exploring how people navigate coursework and connect with community activities.</p>
   {d2l && <D2LFeature project={d2l} />}
   {community && <CommunitySpacesFeature project={community} />}
 </section>

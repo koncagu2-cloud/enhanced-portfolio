@@ -1,5 +1,7 @@
 # Portfolio audit refinements — 2026-10-19
 
+**Current checkpoint:** The owner subsequently approved a rebuilt resume and homepage/About positioning. The unchanged-PDF replacement below is historical and has been superseded. See [FOUNDATION_ALIGNMENT.md](FOUNDATION_ALIGNMENT.md) for current implementation and fresh validation.
+
 ## Latest resume replacement — 2026-10-19
 
 The owner supplied and requested `resume pddf 58.pdf`, superseding the earlier resume described below. The current served PDF is an exact, unmodified copy of this new one-page document, SHA-256 `0c65f84fa1312dd6232a62944cef4b927eb4155252cf574cdd1b0e9de37f18f0`. It already contains the owner-supplied LinkedIn URL and MSU email. The website continues to use the owner-approved Gmail address as its primary contact. No dates, research counts or employment claims from the new resume were automatically copied into the case studies; those remain governed by their existing evidence.

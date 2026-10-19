@@ -54,3 +54,7 @@ The owner said to proceed with the independent review’s recommendations. Imple
 - Add direct Gmail contact and the owner-supplied LinkedIn URL. Serve the selected resume with the expressly authorized collaborative D2L revision; correct its outdated LinkedIn annotation.
 - Refine Community Spaces separately within this authorized audit pass, preserving original art and research sample limits. The original prohibition on Community changes applied to the earlier D2L-only Phase 1, not this later portfolio-wide approval.
 - Preserve noindex, source originals, credits and prototype limitations. No launch, merge, domain or hosting approval is implied.
+
+## Foundation alignment approval — 2026-10-19
+
+Owner approved the exact copy/resume proposal and implementation within the existing editorial system. UX / Product Designer remains primary. Education explicitly states expected December 2026 graduation. A generated one-page resume supersedes the earlier unchanged supplied PDF for the served draft; source JSON and renderer retained. Getir is described as family-owned operations/fulfillment work with a descriptive title, no UX role. MSU Arts/Pure Michigan deferred; interview counts omitted pending reconciliation. Existing case-study design/artifacts/credits remain unchanged. No merge or deployment. See FOUNDATION_ALIGNMENT.md.

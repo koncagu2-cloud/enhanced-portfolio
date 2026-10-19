@@ -128,3 +128,9 @@ Public hosting, rights clearance, domain cutover, indexing changes, merges and d
 ### Resume replacement — 2026-10-19
 
 The owner subsequently supplied `resume pddf 58.pdf` and requested it replace the earlier resume. Serve this new PDF unchanged at the existing resume URL. It supersedes the previous edited copy. Keep Gmail as the main website email and the confirmed LinkedIn URL. Do not automatically propagate the new resume’s dates, study counts or other claims into the case-study narrative without checking its project evidence.
+
+## Approved foundation alignment — 2026-10-19
+
+The owner approved the exact rewritten homepage/About/approach/project/contact and resume proposal. Implement it within the existing visual system. Primary identity remains UX / Product Designer, supported by information architecture, interaction, workflow evaluation, accessibility and frontend background. One credit remains toward the MSU B.A.; expected graduation is December 2026. Resume wording must be “Expected Graduation: December 2026”.
+
+The owner clarified family-owned Getir operations/fulfillment work, including inventory, staff tasks, owner-absence responsibility and closing. Use a descriptive operations title, not UX internship. Dates remain provisional. D2L and Community Spaces retain shared four-person attribution. Community interview counts remain unreconciled; omit them. Defer MSU Arts and Pure Michigan. Replace the served resume with the approved rebuilt one-page document; the original supplied PDF remains untouched. See FOUNDATION_ALIGNMENT.md and docs/resume/README.md. Draft PR only; no merge/deployment/live-site change.

@@ -1,0 +1,50 @@
+{
+  "name": "Suleyman Koncagul",
+  "role": "UX / Product Designer",
+  "location": "East Lansing, MI",
+  "email": "koncagusuleyman@gmail.com",
+  "portfolio": "https://suleymankoncagul.com/",
+  "linkedIn": "https://www.linkedin.com/in/suleyman-koncagul-b3237b357/",
+  "summary": "UX / Product Designer completing a B.A. in Experience Architecture. Collaborative academic experience in interviews, heuristic evaluation, information architecture, task mapping, and interface prototyping, supported by a frontend background and attention to accessibility.",
+  "education": {
+    "institution": "Michigan State University",
+    "degree": "Bachelor of Arts in Experience Architecture",
+    "graduation": "Expected Graduation: December 2026"
+  },
+  "projects": [
+    {
+      "name": "D2L Redesign",
+      "context": "Collaborative academic project · Four-person team",
+      "bullets": [
+        "Collaborated on heuristic evaluation and student/instructor task flows to explore assignment navigation, file review, and submission status.",
+        "Developed sketches, interface iterations, and Figma prototype states with the team for assignment requirements, selected-file review, submission history, and rubric creation."
+      ]
+    },
+    {
+      "name": "Community Spaces",
+      "context": "Collaborative academic project · Four-person team",
+      "bullets": [
+        "Conducted participant interviews and collaborated on synthesizing findings into user needs and design opportunities.",
+        "Developed task flows, sketches, and interface concepts with the team for event discovery, registration, and confirmation within a proposed community-space experience."
+      ]
+    }
+  ],
+  "experience": {
+    "title": "Store Operations & Order Fulfillment Assistant",
+    "organization": "Family-owned Getir storehouse",
+    "location": "Çanakkale, Turkey",
+    "dates": "June 2023-August 2024",
+    "bullets": [
+      "Prepared app orders and organized numbered pickup stations for motorcycle couriers.",
+      "Received deliveries, restocked products, checked inventory and expiry dates, and handled missing items.",
+      "Assigned staff tasks and oversaw daily operations when the owner was away; completed closing checks, cash reconciliation, cleaning, and securing the premises."
+    ]
+  },
+  "skills": {
+    "Design methods": "Participant interviews, heuristic evaluation, information architecture, task-flow mapping, wireframing, interface prototyping",
+    "Design tools": "Figma",
+    "Frontend": "HTML, CSS, JavaScript, React, Vite",
+    "Version control": "Git, GitHub",
+    "Languages": "Turkish - Native; English - Professional; German - Basic"
+  }
+}
