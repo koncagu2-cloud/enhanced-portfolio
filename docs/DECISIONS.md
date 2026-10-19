@@ -58,3 +58,7 @@ The owner said to proceed with the independent review’s recommendations. Imple
 ## Foundation alignment approval — 2026-10-19
 
 Owner approved the exact copy/resume proposal and implementation within the existing editorial system. UX / Product Designer remains primary. Education explicitly states expected December 2026 graduation. A generated one-page resume supersedes the earlier unchanged supplied PDF for the served draft; source JSON and renderer retained. Getir is described as family-owned operations/fulfillment work with a descriptive title, no UX role. MSU Arts/Pure Michigan deferred; interview counts omitted pending reconciliation. Existing case-study design/artifacts/credits remain unchanged. No merge or deployment. See FOUNDATION_ALIGNMENT.md.
+
+## D2L editorial + guided walkthrough — approved 2026-10-19
+
+Owner approved all blueprint recommendations. Use a seven-part narrative, a progressively enhanced three-state walkthrough with read-all/no-JS fallback, optional text-equivalent annotations and ordinary full-size links. Preserve original pixels, shared four-person attribution and original prototype limitations. New isolated branch based on PR #6 preserves the later portfolio refinements; its draft targets `feat/portfolio-review-refinements`, leaving PR #5 unchanged. See d2l/GUIDED_WALKTHROUGH.md. No merge, deployment or original Figma edits.

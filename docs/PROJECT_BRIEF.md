@@ -138,3 +138,9 @@ The owner clarified family-owned Getir operations/fulfillment work, including in
 ## Focused finishing pass — 2026-10-19
 
 Owner authorized the recommended improvements following comparison with the old live site. Compact the homepage hero, add concise problem/method/deliverable/contribution/status summaries, sharpen existing decision examples, add next-project links and explain a real implementation choice with AI assistance acknowledged. Preserve the approved visual system, original artifacts, six chapters, shared credits and review-only configuration. See FINISHING_PASS.md. No merge/deployment; manual accessibility, cross-browser, performance and rights review remain open.
+
+## Approved D2L hybrid walkthrough — 2026-10-19
+
+The owner approved the complete seven-section editorial/guided-walkthrough blueprint: overview, findings, student journey, instructor relationship, exploration, reflection, credits/resources. Original Figma states remain unchanged; portfolio step navigation is not presented as a working or fully connected original prototype. Optional annotations off by default, read-all and no-JavaScript fallbacks, native section navigation and full-size links are approved. All four teammates retain shared credit.
+
+Integration preserves PR #5 and downstream PR #6. A separate `feat/d2l-guided-walkthrough` branch based on PR #6 head `a90a6c9` targets `feat/portfolio-review-refinements` in a new draft PR. Do not rewrite PR #5 or lose the approved homepage/resume/Community work. See d2l/GUIDED_WALKTHROUGH.md for implementation, artifact IDs, tests, screenshots and unresolved review items. No merge/deploy/live-site/Figma change.

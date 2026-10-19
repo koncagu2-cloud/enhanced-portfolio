@@ -21,12 +21,13 @@ test('the portfolio reflows with enlarged text and preserves usable navigation',
 
 test('case studies expose accurate decision states and inspectable evidence', async ({ page }) => {
   await page.goto('/work/d2l-redesign/');
-  const preview = await page.locator('.d2l-decision-preview').boundingBox();
   const findings = await page.locator('#evaluation').boundingBox();
-  expect(preview!.y).toBeLessThan(findings!.y);
-  await expect(page.locator('.d2l-decision-preview img')).toHaveAttribute('alt', /named PDF/);
-  await expect(page.locator('.d2l-step-copy .micro').first()).toContainText('Review Assignment Requirements');
-  await expect(page.locator('.d2l-sequence-note')).toContainText('not a verified, fully connected prototype');
+  const journey = await page.locator('#experience').boundingBox();
+  expect(findings!.y).toBeLessThan(journey!.y);
+  await expect(page.locator('.d2l-decision-preview')).toHaveCount(0);
+  await page.getByRole('button', { name: 'Review selected file', exact: true }).click();
+  await expect(page.locator('#journey-file img')).toHaveAttribute('alt', /named PDF/);
+  await expect(page.locator('.d2l-status')).toContainText('does not establish a fully connected prototype');
   await page.goto('/work/community-spaces/');
   await expect(page.locator('#concept .process-copy')).toContainText('event details, a reservation step, and confirmation');
   await expect(page.locator('.service-journey li')).toHaveText(['Discover an event', 'Review the details', 'Register to attend', 'Attend at the proposed community space']);

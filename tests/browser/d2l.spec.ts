@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
 const path = '/work/d2l-redesign/';
-const chapters = ['The Challenge', 'Evaluating the Existing Experience', 'Mapping Student & Instructor Workflows', 'Exploring Design Solutions', 'The Redesigned Experience', 'Reflection & Next Steps'];
+const chapters = ['Overview', 'UX findings', 'Student journey', 'Instructor experience', 'Exploration', 'Reflection', 'Resources'];
 
 test('D2L is reachable from selected work with confirmed shared attribution and honest review status', async ({ page }) => {
   await page.goto('/');
@@ -13,10 +13,10 @@ test('D2L is reachable from selected work with confirmed shared attribution and 
   await expect(page.locator('.case-sources')).toContainText('Suleyman Koncagul, Gabe Bustillo, Benji Fajardo, and Alana Alexander');
   await expect(page.locator('.project-metadata')).toContainText('Shared team work');
   await expect(page.locator('.d2l-status')).toContainText('not an official D2L release');
-  await expect(page.locator('.d2l-status')).toContainText(/usability testing and measurable improvements are not established/i);
+  await expect(page.locator('.d2l-status')).toContainText(/usability validation and measured improvements are not established/i);
   await expect(page.locator('#reflection')).toContainText('replacement after submission remains unresolved');
-  await expect(page.locator('.d2l-student-sequence > li .micro')).toHaveText(['01 / Review Assignment Requirements', '02 / Review Selected File', '03 / Check Submission Record']);
-  await expect(page.locator('.d2l-sequence-note')).toContainText('not a verified, fully connected prototype');
+  await expect(page.locator('.journey-panel > .journey-copy > .micro')).toHaveText(['01 / Understand requirements', '02 / Review selected file', '03 / Check submission record']);
+  await expect(page.locator('.d2l-status')).toContainText('does not establish a fully connected prototype');
   await expect(page.locator('.d2l-limits')).toHaveCount(0);
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow');
   await expect(page.getByRole('navigation', { name: 'Case study sections' }).getByRole('link')).toHaveText(chapters);
@@ -24,7 +24,9 @@ test('D2L is reachable from selected work with confirmed shared attribution and 
 
 test('D2L originals load at native proportions and every local destination resolves', async ({ page, request }) => {
   await page.goto(path);
-  await expect(page.locator('main img')).toHaveCount(13);
+  await page.getByRole('button', { name: 'Read all steps', exact: true }).click();
+  for (const summary of await page.locator('.d2l-supporting-flow > summary').all()) await summary.click();
+  await expect(page.locator('main img')).toHaveCount(12);
   for (const image of await page.locator('main img').all()) {
     await image.scrollIntoViewIfNeeded();
     await expect(image).toHaveJSProperty('complete', true);
@@ -49,6 +51,8 @@ test('D2L responsive compositions and full-page review captures', async ({ page 
   for (const width of [320, 390, 768, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
     await page.goto(path);
+    await page.getByRole('button', { name: 'Read all steps', exact: true }).click();
+    for (const summary of await page.locator('.d2l-supporting-flow > summary').all()) await summary.click();
     for (const image of await page.locator('main img').all()) {
       await image.scrollIntoViewIfNeeded();
       await expect(image).toHaveJSProperty('complete', true);
@@ -60,7 +64,7 @@ test('D2L responsive compositions and full-page review captures', async ({ page 
     await page.evaluate(() => scrollTo(0, 0));
     if (width !== 768) {
       await page.screenshot({ path: `test-results/d2l-full-${width}.png`, fullPage: true });
-      await page.locator('.d2l-student-sequence').screenshot({ path: `test-results/d2l-journey-${width}.jpg`, quality: 70 });
+      await page.locator('.student-journey').screenshot({ path: `test-results/d2l-journey-${width}.jpg`, quality: 70 });
       await page.locator('.d2l-sketch-grid').screenshot({ path: `test-results/d2l-sketches-${width}.jpg`, quality: 70 });
       await page.locator('.case-intro').screenshot({ path: `test-results/d2l-hero-${width}.jpg`, quality: 70 });
       const height = await page.evaluate(() => document.documentElement.scrollHeight);
@@ -88,13 +92,13 @@ test('D2L keyboard focus, chapter anchors, and mobile traversal work', async ({ 
       await expect(page.locator(`${await link.getAttribute('href')} h2`)).toBeInViewport();
     }
     await page.goto(path);
-    const count = await page.locator('a[href], button:not([hidden])').count();
+    const count = await page.locator('a[href], button, summary').filter({ visible: true }).count();
     for (let i = 0; i < count; i++) {
       await page.keyboard.press('Tab');
       expect(await page.evaluate(() => {
         const node = document.activeElement as HTMLElement;
         const rect = node.getBoundingClientRect();
-        return /^(A|BUTTON)$/.test(node.tagName) && getComputedStyle(node).outlineStyle !== 'none' && rect.left >= 0 && rect.right <= innerWidth;
+        return /^(A|BUTTON|SUMMARY)$/.test(node.tagName) && getComputedStyle(node).outlineStyle !== 'none' && rect.left >= 0 && rect.right <= innerWidth;
       })).toBe(true);
     }
   }
@@ -117,7 +121,7 @@ test('D2L core content works without scripts and does not require motion', async
   const plain = await context.newPage();
   await plain.goto(`http://127.0.0.1:4322${path}`);
   await expect(plain.getByRole('heading', { level: 1 })).toHaveText('D2L Redesign');
-  await plain.getByRole('navigation', { name: 'Case study sections' }).getByRole('link', { name: 'Reflection & Next Steps' }).click();
+  await plain.getByRole('navigation', { name: 'Case study sections' }).getByRole('link', { name: 'Reflection', exact: true }).click();
   await expect(plain).toHaveURL(/#reflection$/);
   await expect(plain.getByRole('button', { name: 'Dark mode' })).toBeHidden();
   await context.close();
