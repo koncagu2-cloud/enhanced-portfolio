@@ -5,8 +5,8 @@ interface Props { project: CollectionEntry<'projects'> }
 const { project } = Astro.props;
 const href = `${import.meta.env.BASE_URL}work/${project.data.caseStudy!.slug}/`;
 ---
-<article class="community-feature" aria-labelledby="community-feature-heading">
-  <div class="feature-heading"><div><p class="micro">Featured case study / Collaborative class project</p><h3 id="community-feature-heading">{project.data.title}</h3><p>{project.data.provisionalSummary}</p></div><span class="status-label">Concept & prototype · Review only</span></div>
+<article class="project-feature community-feature" aria-labelledby="community-feature-heading">
+  <div class="feature-heading"><div><p class="micro">02 / Physical + digital experience · Collaborative class project</p><h3 id="community-feature-heading">{project.data.title}</h3><p>Connecting a proposed community space with a digital experience for discovering events, reviewing details, and registering to participate.</p></div><span class="status-label">Collaborative academic project · Physical and digital concept</span></div>
   <a class="feature-artifacts" href={href} aria-label="View the Community Spaces case study">
     {[communityAssets.home, communityAssets.events, communityAssets.confirmation].map((asset) => <img src={asset.image.src} width={asset.image.width} height={asset.image.height} alt={asset.alt} loading="lazy" decoding="async" />)}
   </a>

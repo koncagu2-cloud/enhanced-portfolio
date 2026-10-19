@@ -1,0 +1,85 @@
+[
+  {
+    "key": "home",
+    "width": 320,
+    "overflow": false,
+    "violations": [],
+    "workTop": 769
+  },
+  {
+    "key": "home",
+    "width": 390,
+    "overflow": false,
+    "violations": [],
+    "workTop": 689
+  },
+  {
+    "key": "home",
+    "width": 768,
+    "overflow": false,
+    "violations": [],
+    "workTop": 688
+  },
+  {
+    "key": "home",
+    "width": 1440,
+    "overflow": false,
+    "violations": [],
+    "workTop": 738
+  },
+  {
+    "key": "d2l",
+    "width": 320,
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "key": "d2l",
+    "width": 390,
+    "overflow": false,
+    "violations": [],
+    "focusOutline": "solid",
+    "nextURL": "http://127.0.0.1:4323/work/community-spaces/"
+  },
+  {
+    "key": "d2l",
+    "width": 768,
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "key": "d2l",
+    "width": 1440,
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "key": "community",
+    "width": 320,
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "key": "community",
+    "width": 390,
+    "overflow": false,
+    "violations": [],
+    "focusOutline": "solid",
+    "nextURL": "http://127.0.0.1:4323/work/d2l-redesign/"
+  },
+  {
+    "key": "community",
+    "width": 768,
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "key": "community",
+    "width": 1440,
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "noJavaScriptNextProject": true
+  }
+]

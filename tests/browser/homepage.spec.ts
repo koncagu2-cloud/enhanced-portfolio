@@ -6,14 +6,17 @@ test('homepage hierarchy, navigation, and honest project review state', async ({
   await expect(page.locator('h1')).toHaveCount(1);
   await expect(page.getByRole('navigation', { name: 'Primary navigation' }).getByRole('link')).toHaveText(['Work', 'About', 'Resume', 'Contact']);
   expect(await page.locator('main > section').evaluateAll((sections) => sections.map((s) => s.getAttribute('aria-labelledby')))).toEqual(['hero-heading', 'work-heading', 'approach-heading', 'about-heading', 'contact-heading']);
-  await expect(page.locator('article')).toHaveCount(3);
-  await expect(page.getByText('Provisional candidate', { exact: true })).toHaveCount(1);
+  await expect(page.locator('article')).toHaveCount(2);
+  await expect(page.locator('article h3')).toHaveText(['D2L Redesign', 'Community Spaces']);
+  await expect(page.getByText('Pure Michigan', { exact: true })).toHaveCount(0);
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow');
   await page.getByRole('navigation').getByRole('link', { name: 'Work', exact: true }).click();
   await expect(page).toHaveURL(/#work$/);
   await page.getByRole('navigation').getByRole('link', { name: 'Resume', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'Resume', exact: true })).toBeInViewport();
-  await expect(page.getByRole('link', { name: 'Contact via current portfolio' })).toHaveAttribute('href', 'https://suleymankoncagul.com/contact');
+  await expect(page.locator('a[href="https://suleymankoncagul.com/contact"]')).toHaveCount(0);
+  await expect(page.getByRole('link', { name: 'Email Suleyman Koncagul' })).toHaveAttribute('href', 'mailto:koncagusuleyman@gmail.com');
+  await expect(page.getByRole('link', { name: 'LinkedIn', exact: true })).toHaveAttribute('href', 'https://www.linkedin.com/in/suleyman-koncagul-b3237b357/');
   // Every same-page navigation link has a real target.
   const missing = await page.locator('a[href^="#"]').evaluateAll((links) => links.map((a) => a.getAttribute('href')!).filter((href) => !document.getElementById(href.slice(1))));
   expect(missing).toEqual([]);
@@ -87,10 +90,15 @@ test('unavailable storage and reduced motion do not break interaction', async ({
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
 });
 
-test('uncommissioned case-study routes and fabricated resume downloads stay absent', async ({ page, request }) => {
+test('uncommissioned routes stay absent and the approved resume resolves', async ({ page, request }) => {
   const response = await request.get('/work/d2l/');
   expect(response.status()).toBe(404);
   await page.goto('/');
-  await expect(page.locator('a[download], a[href$=".pdf"]')).toHaveCount(0);
-  expect(await page.locator('a[href^="/work/"]').evaluateAll((links) => [...new Set(links.map((a) => a.getAttribute('href')))])).toEqual(['/work/community-spaces/', '/work/d2l-redesign/']);
+  const resume = page.getByRole('link', { name: 'Read the resume (PDF)' });
+  await expect(resume).toHaveAttribute('href', '/resume/suleyman-koncagul-resume.pdf');
+  const pdf = await request.get('/resume/suleyman-koncagul-resume.pdf');
+  expect(pdf.status()).toBe(200);
+  expect(pdf.headers()['content-type']).toContain('application/pdf');
+  expect((await pdf.body()).subarray(0, 5).toString()).toBe('%PDF-');
+  expect(await page.locator('a[href^="/work/"]').evaluateAll((links) => [...new Set(links.map((a) => a.getAttribute('href')))])).toEqual(['/work/d2l-redesign/', '/work/community-spaces/']);
 });

@@ -1,6 +1,6 @@
 # Portfolio V2 — Shared Project Brief for Codex and ChatGPT
 
-Status: Bounded grayscale homepage implementation authorized; evidence discovery continues. Last updated: 2026-10-16.
+Status: Source-backed case studies and approved audit refinements implemented for draft review; no merge or deployment authorized. Last updated: 2026-10-19.
 Owner: Suleyman Koncagul. Repository: koncagu2-cloud/enhanced-portfolio.
 Reference only: koncagu2-cloud/portfolio (do not modify the old portfolio).
 
@@ -112,3 +112,29 @@ Attribute findings to the class materials, preserve authentic visuals, and frame
 ## D2L implementation authorization — 2026-10-16
 
 The owner approved in principle the six-chapter narrative, student-first story with a supporting instructor sequence, and dual-desktop hero. The owner then confirmed the full collaborative roster: Suleyman Koncagul, Gabe Bustillo, Benji Fajardo, and Alana Alexander. This satisfies the explicit attribution prerequisite for a separate implementation branch and draft PR based on the original Figma artifacts and current portfolio design system. Preserve the evidence-based language and known prototype limitations; do not imply official release, launch, completed usability testing, or measurable improvements. Keep planning PR #4 open/draft, Community Spaces unchanged, and noindex intact. No merge, deployment, or original live-portfolio changes. See docs/d2l/IMPLEMENTATION.md for executed work and review results.
+
+
+## Audit refinement checkpoint — 2026-10-19
+
+The owner approved proceeding with the independent audit’s recommended refinements. Work is isolated on `feat/portfolio-review-refinements`, based on PR #5’s `33bd1ad`, for a separate draft PR. D2L leads the two substantial project features; Community Spaces remains prominent. Pure Michigan’s unverified record is retained as draft rather than displayed as selected work.
+
+Preserve the editorial system, original interface assets/colors, six-chapter case studies, accurate shared credits, and review-only/noindex behavior. Homepage positioning/background, direct contact, resume access, early D2L decision evidence, Community research/figure alignment, descriptive artifact links and enlarged-text layouts are the approved focus. The physical/digital service sequence is an explanatory summary, not a new original artifact or completed service.
+
+The owner approved Gmail `koncagusuleyman@gmail.com` or MSU email; Gmail is the main website contact. LinkedIn is `https://www.linkedin.com/in/suleyman-koncagul-b3237b357/`. The owner selected `Suleyman_Koncagul_Resume_Full_Page.pdf` and expressly approved replacing its D2L leadership phrase with collaborative wording. The served copy also corrects its LinkedIn annotation; the original file remains unchanged. Other resume content is owner-provided, not independently established by the case-study source audit.
+
+Public hosting, rights clearance, domain cutover, indexing changes, merges and deployment remain separate approval gates. See REVIEW_REFINEMENTS.md for implementation, evidence, screenshots and executed checks.
+
+
+### Resume replacement — 2026-10-19
+
+The owner subsequently supplied `resume pddf 58.pdf` and requested it replace the earlier resume. Serve this new PDF unchanged at the existing resume URL. It supersedes the previous edited copy. Keep Gmail as the main website email and the confirmed LinkedIn URL. Do not automatically propagate the new resume’s dates, study counts or other claims into the case-study narrative without checking its project evidence.
+
+## Approved foundation alignment — 2026-10-19
+
+The owner approved the exact rewritten homepage/About/approach/project/contact and resume proposal. Implement it within the existing visual system. Primary identity remains UX / Product Designer, supported by information architecture, interaction, workflow evaluation, accessibility and frontend background. One credit remains toward the MSU B.A.; expected graduation is December 2026. Resume wording must be “Expected Graduation: December 2026”.
+
+The owner clarified family-owned Getir operations/fulfillment work, including inventory, staff tasks, owner-absence responsibility and closing. Use a descriptive operations title, not UX internship. Dates remain provisional. D2L and Community Spaces retain shared four-person attribution. Community interview counts remain unreconciled; omit them. Defer MSU Arts and Pure Michigan. Replace the served resume with the approved rebuilt one-page document; the original supplied PDF remains untouched. See FOUNDATION_ALIGNMENT.md and docs/resume/README.md. Draft PR only; no merge/deployment/live-site change.
+
+## Focused finishing pass — 2026-10-19
+
+Owner authorized the recommended improvements following comparison with the old live site. Compact the homepage hero, add concise problem/method/deliverable/contribution/status summaries, sharpen existing decision examples, add next-project links and explain a real implementation choice with AI assistance acknowledged. Preserve the approved visual system, original artifacts, six chapters, shared credits and review-only configuration. See FINISHING_PASS.md. No merge/deployment; manual accessibility, cross-browser, performance and rights review remain open.

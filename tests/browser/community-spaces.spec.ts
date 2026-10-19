@@ -73,7 +73,7 @@ test('desktop and narrow layouts retain readable figures and comparison without 
     const discover = await page.locator('.showcase-discover').boundingBox();
     expect(explore).not.toBeNull();
     expect(discover).not.toBeNull();
-    if (width <= 390) expect(explore!.y + explore!.height).toBeLessThan(discover!.y);
+    if (width <= 390) expect(discover!.y + discover!.height).toBeLessThan(explore!.y);
     else expect(explore!.x).toBeGreaterThan(discover!.x);
     for (const img of await page.locator('main img').all()) {
       await img.scrollIntoViewIfNeeded();

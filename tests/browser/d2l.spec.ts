@@ -9,12 +9,13 @@ test('D2L is reachable from selected work with confirmed shared attribution and 
   await page.getByRole('link', { name: 'Read the D2L case study' }).click();
   await expect(page).toHaveURL(new RegExp(`${path}$`));
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('D2L Redesign');
-  await expect(page.locator('.project-metadata')).toContainText('Suleyman Koncagul, Gabe Bustillo, Benji Fajardo, Alana Alexander');
-  await expect(page.locator('.project-metadata')).toContainText('shared team work');
+  await expect(page.locator('.project-metadata')).toContainText('Four-person collaborative team');
+  await expect(page.locator('.case-sources')).toContainText('Suleyman Koncagul, Gabe Bustillo, Benji Fajardo, and Alana Alexander');
+  await expect(page.locator('.project-metadata')).toContainText('Shared team work');
   await expect(page.locator('.d2l-status')).toContainText('not an official D2L release');
-  await expect(page.locator('.d2l-status')).toContainText('usability testing and measurable improvements are not established');
+  await expect(page.locator('.d2l-status')).toContainText(/usability testing and measurable improvements are not established/i);
   await expect(page.locator('#reflection')).toContainText('replacement after submission remains unresolved');
-  await expect(page.locator('.d2l-student-sequence > li .micro')).toHaveText(['01 / Find Assignment', '02 / Review Selected File', '03 / Check Submission Record']);
+  await expect(page.locator('.d2l-student-sequence > li .micro')).toHaveText(['01 / Review Assignment Requirements', '02 / Review Selected File', '03 / Check Submission Record']);
   await expect(page.locator('.d2l-sequence-note')).toContainText('not a verified, fully connected prototype');
   await expect(page.locator('.d2l-limits')).toHaveCount(0);
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow');
@@ -23,7 +24,7 @@ test('D2L is reachable from selected work with confirmed shared attribution and 
 
 test('D2L originals load at native proportions and every local destination resolves', async ({ page, request }) => {
   await page.goto(path);
-  await expect(page.locator('main img')).toHaveCount(12);
+  await expect(page.locator('main img')).toHaveCount(13);
   for (const image of await page.locator('main img').all()) {
     await image.scrollIntoViewIfNeeded();
     await expect(image).toHaveJSProperty('complete', true);

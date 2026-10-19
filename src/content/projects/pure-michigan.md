@@ -3,7 +3,7 @@ title: Pure Michigan
 order: 2
 category: Candidate / information architecture
 provisionalSummary: A case-study candidate focused on information architecture and content. Original audit material and the project narrative are pending review.
-publicationStatus: review
+publicationStatus: draft
 workStatus: unverified
 evidence:
   - id: pure-michigan-existing-summary
