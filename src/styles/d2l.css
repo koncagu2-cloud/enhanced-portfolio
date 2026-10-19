@@ -7,6 +7,15 @@
 .d2l-case .artifact-mat { padding: 0; }
 .d2l-case .artifact-figure img { background: white; }
 .d2l-case .artifact-source { overflow-wrap: anywhere; }
+.d2l-case .case-intro > .project-metadata { margin-top: 0; }
+.d2l-case .case-intro > .d2l-desktop-pair { margin-top: 2rem; }
+.d2l-priorities { margin-top: 1.75rem; }
+.d2l-priorities h3 { font-size: 1.1rem; letter-spacing: -.025em; }
+.d2l-priorities dl { margin-block: 1rem; }
+.d2l-priorities dl > div { padding-block: .65rem; border-top: 1px solid var(--rule); }
+.d2l-priorities dt { font-weight: 600; }
+.d2l-priorities dd { margin: .25rem 0 0; }
+.d2l-priorities dd, .d2l-priorities > a { font-size: .95rem; }
 .d2l-status { max-width: 85ch; font-size: .85rem; color: var(--muted); margin-top: 1.5rem; }
 .d2l-case .chapter-evaluation, .d2l-case .chapter-workflows, .d2l-case .chapter-exploration, .d2l-case .chapter-experience, .d2l-case .chapter-reflection { grid-template-columns: 1fr; gap: 2rem; }
 .d2l-case .process-section { padding-block: 2.5rem 3rem; }
@@ -15,6 +24,7 @@
 .d2l-findings article { min-width: 0; border-top: 1px solid var(--ink); padding-top: 1.25rem; }
 .d2l-findings h3 { font: 1.5rem/1.25 Georgia, 'Times New Roman', serif; letter-spacing: -.025em; margin-block: 1rem; }
 .d2l-findings p:not(.micro):not(.source-note) { font-size: .95rem; }
+.d2l-findings .source-note a { display: inline-block; padding-block: .3rem; }
 .d2l-response { margin-top: 1rem; }
 .d2l-flow-grid, .d2l-iteration, .d2l-sketch-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.5rem, 3vw, 3rem); margin-top: 2rem; }
 .d2l-case h3 { line-height: 1.3; }

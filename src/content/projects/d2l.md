@@ -46,24 +46,24 @@ claims:
 caseStudy:
   slug: d2l-redesign
   headline: Making academic workflows easier to navigate.
-  introduction: How might we make everyday academic tasks easier for students and instructors? Our team examined usability challenges in D2L, mapped key coursework workflows, and explored redesigned interfaces for submitting and managing assignments.
-  context: Michigan State University · Collaborative UX / UI project
-  role: Evaluation, workflow mapping, interface exploration, and prototyping — shared team work.
+  introduction: Students and instructors interact with the same coursework from different perspectives. Our team evaluated D2L’s assignment workflows and explored how clearer navigation, file-selection states, and grading structures could make those interactions easier to understand.
+  context: Michigan State University · Academic UX/UI redesign proposal
+  role: Collaborative work across heuristic evaluation, workflow mapping, interface exploration, and prototyping — shared team work.
   team: [Suleyman Koncagul, Gabe Bustillo, Benji Fajardo, Alana Alexander]
   sections:
     - id: challenge
       kicker: 01 / The Challenge
       title: Coursework is a sequence, not a single screen.
       paragraphs:
-        - Students need to find an assignment, understand its requirements, choose a file, and know whether it was submitted. Instructors need to organize those requirements, define grading criteria, and review work.
-        - We focused the redesign on these connected tasks. The opportunity was to make context, available actions, and the next state easier to see as someone moved through coursework.
-      sourceNote: Team task maps · Figma 123:4 and 123:3; three-issue summary 163:12.
+        - Our primary story follows student assignment discovery and submission. The task map moves from finding an assignment and reading its requirements to selecting a file, reviewing it, submitting, and checking the record. The interface concepts show several of these states; they do not form a fully connected prototype.
+        - Instructor assignment creation and rubric structure support that journey. The instructor task map brings requirements, grading criteria, and assignment preparation together—the information students depend on when deciding what to submit.
+      sourceNote: Planned student and instructor workflows · Figma 123:4 and 123:3. Selected assignment, file-review, and history states · 554:1123, 554:1377, and 554:1169. These priorities describe interface intentions, not validated improvements.
     - id: evaluation
       kicker: 02 / Evaluating the Existing Experience
       title: Three questions to guide the redesign.
       paragraphs:
-        - Our heuristic evaluation recorded concerns about navigation and information hierarchy, control over submitted files, and the structure of assignment and rubric creation.
-        - These observations gave us concrete questions about context, file review, and grading criteria to explore.
+        - The team’s heuristic evaluation identified missing location cues, ambiguity around replacing submitted files, and difficulty distinguishing rubric cells.
+        - The questions below connect those observations to visible interface proposals. The connections explain what the artifacts address; they do not establish that each concern was resolved.
       sourceNote: Team heuristic evaluation of the class-project baseline · Figma 16:2, 19:10, 18:2, and 9:6.
     - id: workflows
       kicker: 03 / Mapping Student & Instructor Workflows
