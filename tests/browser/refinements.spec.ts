@@ -29,8 +29,8 @@ test('case studies expose accurate decision states and inspectable evidence', as
   await expect(page.locator('#journey-file img')).toHaveAttribute('alt', /named PDF/);
   await expect(page.locator('.d2l-status')).toContainText('does not establish a fully connected prototype');
   await page.goto('/work/community-spaces/');
-  await expect(page.locator('#concept .process-copy')).toContainText('event details, a reservation step, and confirmation');
-  await expect(page.locator('.service-journey li')).toHaveText(['Discover an event', 'Review the details', 'Register to attend', 'Attend at the proposed community space']);
+  await expect(page.locator('#concept .process-copy')).toContainText('Explore four original KIBS interface states.');
+  await expect(page.locator('.service-journey li')).toHaveText(['Discover an event', 'Review the details', 'Register to attend', 'Intended visit to the proposed space']);
   await expect(page.locator('#research')).toContainText('not a population-level statistic');
   const links = page.locator('.artifact-figure figcaption a');
   const labels = await links.allTextContents();

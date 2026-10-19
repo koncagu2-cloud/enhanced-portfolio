@@ -73,3 +73,7 @@ Initial test run: two selectors mistakenly included decorative step numbers omit
 ## Unresolved review items
 
 Manual VoiceOver/NVDA announcements, Safari/Firefox, physical-device interaction, native zoom and measured performance remain unverified. Emulated touch and automated axe checks are not substitutes for those checks or accessibility certification. Original prototype limitations, third-party image/icon rights, course/term and signed-out source sharing remain as recorded. The full-size link remains necessary for fine original screenshot text on small screens. No merge or deployment.
+
+### Shared-component extraction — 2026-10-19
+
+The later owner-approved Community implementation extracts this interaction into `GuidedJourney.astro` and `guided-journey.css`, with a configurable count, Figma source and portrait/desktop layout. D2L retains its three-state wrapper, original content, screens, links and behavior. The Community draft reruns the complete D2L suite. See ../COMMUNITY_GUIDED_WALKTHROUGH.md.
