@@ -43,3 +43,14 @@ The owner explicitly requested a dedicated Community Spaces page and large homep
 ## Full Community Spaces review — 2026-10-16
 
 Owner approved the staggered hero as visual direction and requested the complete case-study experience. Preserve authentic screen composition/editorial styling; KIBS is a secondary label. Research, problem definition, physical/digital concept, flow, evolution, deliverables, and reflection are now represented with source notes. Full desktop/mobile capture sequences are documented in COMMUNITY_SPACES.md. No production or merge approval is implied.
+
+
+## Approved audit refinements — 2026-10-19
+
+The owner said to proceed with the independent review’s recommendations. Implement on a separate branch/draft PR, preserving PR #5’s scope and the live portfolio.
+
+- Use the recommended D2L-first homepage ordering with substantial authentic visuals for both commissioned studies. Keep Pure Michigan’s record as draft pending evidence.
+- Keep the existing visual system; favor compact editorial explanation, ordinary anchors and original-size links over a new lightbox or animation library.
+- Add direct Gmail contact and the owner-supplied LinkedIn URL. Serve the selected resume with the expressly authorized collaborative D2L revision; correct its outdated LinkedIn annotation.
+- Refine Community Spaces separately within this authorized audit pass, preserving original art and research sample limits. The original prohibition on Community changes applied to the earlier D2L-only Phase 1, not this later portfolio-wide approval.
+- Preserve noindex, source originals, credits and prototype limitations. No launch, merge, domain or hosting approval is implied.

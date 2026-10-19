@@ -29,3 +29,10 @@ Start with answers to questions 1, 2, 4, and 5. ChatGPT should review DISCOVERY.
 ## Community Spaces clarification — 2026-10-16
 
 The owner supplied original Figma sources and the final presentation and confirmed shared contribution across all four teammates. This is a separate collaborative GD 491 final project; do not conflate it with the Museum project without evidence. Exact project date, methodological details in underlying research, and embedded photo/icon rights remain open. Implementation uses reported findings and authentic artifacts on a review-only page, with no launch or demonstrated improvement claim.
+
+
+## Current answers — 2026-10-19
+
+Earlier entries above are historical. Both case-study team rosters and shared contribution are confirmed. The owner selected the full-page resume and approved collaborative D2L wording; public website email and LinkedIn are now confirmed. Do not re-ask those questions. Portfolio positioning and default D2L-first selection follow the approved audit recommendation.
+
+Still pending before launch: third-party asset rights, signed-out source sharing, actual host/domain plan, manual assistive-technology/cross-browser/physical-device checks and performance measurements. The owner-supplied resume is the approved document; employment, research-execution and other claims beyond inspected project sources are not independently verified by this repository’s asset hashes. The D2L class course/term remains unconfirmed in original project metadata and is not inferred from illustrative screens.

@@ -62,8 +62,8 @@ caseStudy:
       kicker: 02 / Understanding Students
       title: Make room for connection.
       paragraphs:
-        - The class research reported interest in a space for social connection and cultural exchange. Participants also recommended accessible features and more entertainment involving music or concerts.
-        - These findings helped frame a concept that brought study, social activities, and events together. The digital need was more specific — see what is available on a chosen date and find an event to attend.
+        - The team framed two connected needs — a place to study and build relationships, and a way to see which events were available on particular dates. The class research also reported interest in social connection, cultural exchange, accessible features, and music or concert-related entertainment.
+        - The date-specific need connects most directly to the digital concept — event information and registration before a visit. Music and concert interest informed the broader context; the selected screens do not demonstrate a concert-specific feature.
       sourceNote: Research and user needs · Class presentation, pages 3–4; original Figma user needs.
     - id: experience
       kicker: 03 / Designing the Experience
@@ -85,7 +85,7 @@ caseStudy:
       kicker: 05 / The Final Concept
       title: Discover. Explore. Take part.
       paragraphs:
-        - The final concept connects a proposed community space with an event-registration prototype. The home screen introduces a calendar and an entry point to events. The event list provides dates and descriptions, while confirmation offers a way to return home, keep browsing, or add the event to a calendar.
+        - The selected screens show event details, a reservation step, and confirmation. The concept presents event information first, then requirements and availability before booking a place. Confirmation offers a way to return home, keep browsing, or add the event to a calendar.
         - Together, the spatial sketches, user-need statements, task flow, wireframes, and high-fidelity screens document the team’s physical and digital concept.
       media: [screens]
       sourceNote: Original Figma Event Details, Reserve Spot, and Confirmation frames · 214:167, 214:89, and 214:4; final class presentation.

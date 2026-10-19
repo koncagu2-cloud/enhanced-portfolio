@@ -1,19 +1,17 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
 import SectionHeading from './SectionHeading.astro';
-import ProjectRow from './ProjectRow.astro';
+import D2LFeature from './D2LFeature.astro';
 import CommunitySpacesFeature from './CommunitySpacesFeature.astro';
 import '../styles/case-study.css';
-// Review entries appear only on this explicitly provisional, noindex homepage.
-// Drafts are omitted. Commissioned Community Spaces and D2L reviews have case-study routes.
-const projects = await getCollection('projects', ({ data }) => data.publicationStatus === 'review');
-projects.sort((a, b) => a.data.order - b.data.order);
-const feature = projects.find((project) => project.id === 'community-spaces' && project.data.caseStudy);
-const entries = await Promise.all(projects.filter((project) => project.id !== feature?.id).map(async (project) => ({ project, ...await render(project) })));
+// Only the two commissioned, source-backed review case studies are featured.
+const projects = await getCollection('projects', ({ data }) => data.publicationStatus === 'review' && Boolean(data.caseStudy));
+const d2l = projects.find(project => project.id === 'd2l');
+const community = projects.find(project => project.id === 'community-spaces');
 ---
 <section id="work" class="section" aria-labelledby="work-heading">
-  <SectionHeading number="01" title="Selected work" id="work-heading" note="Selection in progress" />
-  <p class="section-intro">Collaborative project work and a developing shortlist. These review case studies connect original artifacts with design decisions and proposed next steps.</p>
-  {feature && <CommunitySpacesFeature project={feature} />}
-  <div class="project-list">{entries.map(({ project, Content }, i) => <ProjectRow project={project} number={i + 1}><Content /></ProjectRow>)}</div>
+  <SectionHeading number="01" title="Selected work" id="work-heading" note="Two collaborative university projects" />
+  <p class="section-intro">Exploring assignment submission in D2L and connecting a community space with event discovery and registration.</p>
+  {d2l && <D2LFeature project={d2l} />}
+  {community && <CommunitySpacesFeature project={community} />}
 </section>

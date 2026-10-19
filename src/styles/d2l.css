@@ -68,3 +68,15 @@
   .d2l-case .case-toc a { max-width: 100%; }
   .d2l-case .case-toc li { min-width: 0; }
 }
+
+/* Surface the central decision before the supporting process material. */
+.d2l-case .project-metadata { grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); }
+.d2l-case .chapter-challenge { grid-template-columns: 1fr; gap: 2rem; }
+.d2l-decision-preview { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(1.5rem, 4vw, 4rem); align-items: start; margin-top: 2rem; }
+.d2l-decision-preview .d2l-priorities { margin-top: 0; }
+.d2l-flow-grid, .d2l-student-sequence { grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); }
+.d2l-iteration { max-width: 50rem; margin-inline: auto; }
+.d2l-sequence-note a { display: inline-block; padding-block: .3rem; }
+@media (max-width: 60rem) {
+  .d2l-decision-preview, .d2l-sketch-grid { grid-template-columns: 1fr; }
+}

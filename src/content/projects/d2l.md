@@ -48,7 +48,7 @@ caseStudy:
   headline: Making academic workflows easier to navigate.
   introduction: Students and instructors interact with the same coursework from different perspectives. Our team evaluated D2L’s assignment workflows and explored how clearer navigation, file-selection states, and grading structures could make those interactions easier to understand.
   context: Michigan State University · Academic UX/UI redesign proposal
-  role: Collaborative work across heuristic evaluation, workflow mapping, interface exploration, and prototyping — shared team work.
+  role: Shared team work across heuristic evaluation, workflow mapping, interface exploration, and prototyping.
   team: [Suleyman Koncagul, Gabe Bustillo, Benji Fajardo, Alana Alexander]
   sections:
     - id: challenge

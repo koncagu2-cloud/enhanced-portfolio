@@ -1,6 +1,6 @@
 # Portfolio V2 — Shared Project Brief for Codex and ChatGPT
 
-Status: Bounded grayscale homepage implementation authorized; evidence discovery continues. Last updated: 2026-10-16.
+Status: Source-backed case studies and approved audit refinements implemented for draft review; no merge or deployment authorized. Last updated: 2026-10-19.
 Owner: Suleyman Koncagul. Repository: koncagu2-cloud/enhanced-portfolio.
 Reference only: koncagu2-cloud/portfolio (do not modify the old portfolio).
 
@@ -112,3 +112,14 @@ Attribute findings to the class materials, preserve authentic visuals, and frame
 ## D2L implementation authorization — 2026-10-16
 
 The owner approved in principle the six-chapter narrative, student-first story with a supporting instructor sequence, and dual-desktop hero. The owner then confirmed the full collaborative roster: Suleyman Koncagul, Gabe Bustillo, Benji Fajardo, and Alana Alexander. This satisfies the explicit attribution prerequisite for a separate implementation branch and draft PR based on the original Figma artifacts and current portfolio design system. Preserve the evidence-based language and known prototype limitations; do not imply official release, launch, completed usability testing, or measurable improvements. Keep planning PR #4 open/draft, Community Spaces unchanged, and noindex intact. No merge, deployment, or original live-portfolio changes. See docs/d2l/IMPLEMENTATION.md for executed work and review results.
+
+
+## Audit refinement checkpoint — 2026-10-19
+
+The owner approved proceeding with the independent audit’s recommended refinements. Work is isolated on `feat/portfolio-review-refinements`, based on PR #5’s `33bd1ad`, for a separate draft PR. D2L leads the two substantial project features; Community Spaces remains prominent. Pure Michigan’s unverified record is retained as draft rather than displayed as selected work.
+
+Preserve the editorial system, original interface assets/colors, six-chapter case studies, accurate shared credits, and review-only/noindex behavior. Homepage positioning/background, direct contact, resume access, early D2L decision evidence, Community research/figure alignment, descriptive artifact links and enlarged-text layouts are the approved focus. The physical/digital service sequence is an explanatory summary, not a new original artifact or completed service.
+
+The owner approved Gmail `koncagusuleyman@gmail.com` or MSU email; Gmail is the main website contact. LinkedIn is `https://www.linkedin.com/in/suleyman-koncagul-b3237b357/`. The owner selected `Suleyman_Koncagul_Resume_Full_Page.pdf` and expressly approved replacing its D2L leadership phrase with collaborative wording. The served copy also corrects its LinkedIn annotation; the original file remains unchanged. Other resume content is owner-provided, not independently established by the case-study source audit.
+
+Public hosting, rights clearance, domain cutover, indexing changes, merges and deployment remain separate approval gates. See REVIEW_REFINEMENTS.md for implementation, evidence, screenshots and executed checks.
