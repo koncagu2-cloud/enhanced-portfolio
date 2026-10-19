@@ -1,5 +1,13 @@
 # Portfolio audit refinements — 2026-10-19
 
+## Latest resume replacement — 2026-10-19
+
+The owner supplied and requested `resume pddf 58.pdf`, superseding the earlier resume described below. The current served PDF is an exact, unmodified copy of this new one-page document, SHA-256 `0c65f84fa1312dd6232a62944cef4b927eb4155252cf574cdd1b0e9de37f18f0`. It already contains the owner-supplied LinkedIn URL and MSU email. The website continues to use the owner-approved Gmail address as its primary contact. No dates, research counts or employment claims from the new resume were automatically copied into the case studies; those remain governed by their existing evidence.
+
+Replacement verification: production build passed; both targeted homepage/contact and served-resume browser checks passed (2/2). The PDF returns HTTP 200/application-pdf, and its bytes match the owner-supplied file. The full 23-test refinement run documented below predates this PDF-only replacement.
+
+The earlier collaborative-bullet edit remains a historical record of the superseded PDF, not an edit to this new document. The original new PDF and all page source/styles are unchanged.
+
 ## Approval and boundary
 
 The owner approved implementation of the independent portfolio audit recommendations. This branch is `feat/portfolio-review-refinements`, based on PR #5 commit `33bd1ad112b12cbe87bab81f689d24a913cb6c92`. A separate draft PR keeps the original D2L implementation review isolated. No merge, deployment, live-site edit, Figma change or indexing-policy change is authorized.

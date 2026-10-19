@@ -123,3 +123,8 @@ Preserve the editorial system, original interface assets/colors, six-chapter cas
 The owner approved Gmail `koncagusuleyman@gmail.com` or MSU email; Gmail is the main website contact. LinkedIn is `https://www.linkedin.com/in/suleyman-koncagul-b3237b357/`. The owner selected `Suleyman_Koncagul_Resume_Full_Page.pdf` and expressly approved replacing its D2L leadership phrase with collaborative wording. The served copy also corrects its LinkedIn annotation; the original file remains unchanged. Other resume content is owner-provided, not independently established by the case-study source audit.
 
 Public hosting, rights clearance, domain cutover, indexing changes, merges and deployment remain separate approval gates. See REVIEW_REFINEMENTS.md for implementation, evidence, screenshots and executed checks.
+
+
+### Resume replacement — 2026-10-19
+
+The owner subsequently supplied `resume pddf 58.pdf` and requested it replace the earlier resume. Serve this new PDF unchanged at the existing resume URL. It supersedes the previous edited copy. Keep Gmail as the main website email and the confirmed LinkedIn URL. Do not automatically propagate the new resume’s dates, study counts or other claims into the case-study narrative without checking its project evidence.
