@@ -62,3 +62,7 @@ Owner approved the exact copy/resume proposal and implementation within the exis
 ## D2L editorial + guided walkthrough — approved 2026-10-19
 
 Owner approved all blueprint recommendations. Use a seven-part narrative, a progressively enhanced three-state walkthrough with read-all/no-JS fallback, optional text-equivalent annotations and ordinary full-size links. Preserve original pixels, shared four-person attribution and original prototype limitations. New isolated branch based on PR #6 preserves the later portfolio refinements; its draft targets `feat/portfolio-review-refinements`, leaving PR #5 unchanged. See d2l/GUIDED_WALKTHROUGH.md. No merge, deployment or original Figma edits.
+
+## Community portrait walkthrough — approved 2026-10-19
+
+Owner approved the six-chapter Community blueprint. Four authentic event-discovery/registration states, shared guided/read-all/no-JS behavior, optional annotations and native full-size links; distinct portrait layout. Physical-space concept and research remain central. Source screens, hero and team credits preserved; no simulated booking or attendance. Shared extraction must preserve D2L behavior and pass its regression suite. Separate branch/draft based on PR #7; no merge/deployment. See COMMUNITY_GUIDED_WALKTHROUGH.md.

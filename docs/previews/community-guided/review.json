@@ -1,0 +1,30 @@
+[
+  {
+    "width": 320,
+    "phoneWidth": 280,
+    "errors": [],
+    "overflow": false,
+    "stepCount": 4
+  },
+  {
+    "width": 390,
+    "phoneWidth": 350,
+    "errors": [],
+    "overflow": false,
+    "stepCount": 4
+  },
+  {
+    "width": 768,
+    "phoneWidth": 393,
+    "errors": [],
+    "overflow": false,
+    "stepCount": 4
+  },
+  {
+    "width": 1440,
+    "phoneWidth": 393,
+    "errors": [],
+    "overflow": false,
+    "stepCount": 4
+  }
+]

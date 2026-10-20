@@ -1,3 +1,4 @@
+import { tabKey } from './keyboard';
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
@@ -22,10 +23,10 @@ test('homepage hierarchy, navigation, and honest project review state', async ({
   expect(missing).toEqual([]);
 });
 
-test('keyboard skip link, evidence disclosure, theme toggle, and persistence', async ({ page }) => {
+test('keyboard skip link, evidence disclosure, theme toggle, and persistence', async ({ page, browserName }) => {
   await page.goto('/');
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
-  await page.keyboard.press('Tab');
+  await page.keyboard.press(tabKey(browserName));
   await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused();
   await page.keyboard.press('Enter');
   await expect(page.locator('main')).toBeFocused();

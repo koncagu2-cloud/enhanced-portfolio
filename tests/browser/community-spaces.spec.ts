@@ -1,3 +1,4 @@
+import { tabKey } from './keyboard';
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
@@ -27,9 +28,9 @@ test('homepage feature leads to the source-backed collaborative review case stud
   expect((await request.get('/work/pure-michigan/')).status()).toBe(404);
 });
 
-test('case-study anchors, keyboard skip link, and return navigation work', async ({ page }) => {
+test('case-study anchors, keyboard skip link, and return navigation work', async ({ page, browserName }) => {
   await page.goto(path);
-  await page.keyboard.press('Tab');
+  await page.keyboard.press(tabKey(browserName));
   await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused();
   await page.keyboard.press('Enter');
   await expect(page.locator('main')).toBeFocused();
@@ -49,7 +50,9 @@ test('case-study anchors, keyboard skip link, and return navigation work', async
 test('authentic image exports load with meaningful descriptions and intact proportions', async ({ page, request }) => {
   await page.goto(path);
   const images = page.locator('main img');
-  await expect(images).toHaveCount(11);
+  await page.getByRole('button', { name: 'Read all steps', exact: true }).click();
+  await page.locator('.community-task-flow summary').click();
+  await expect(images).toHaveCount(12);
   for (const img of await images.all()) {
     await img.scrollIntoViewIfNeeded();
     await expect(img).toHaveJSProperty('complete', true);
@@ -61,7 +64,7 @@ test('authentic image exports load with meaningful descriptions and intact propo
     expect(response.status()).toBe(200);
     expect(response.headers()['content-type']).toContain(src!.endsWith('.webp') ? 'image/webp' : 'image/png');
   }
-  await expect(page.locator('.process-content figcaption a')).toHaveCount(8);
+  await expect(page.locator('.process-content figcaption a[href^="/_astro/"]')).toHaveCount(9);
 });
 
 test('desktop and narrow layouts retain readable figures and comparison without overflow', async ({ page }) => {
@@ -75,6 +78,8 @@ test('desktop and narrow layouts retain readable figures and comparison without 
     expect(discover).not.toBeNull();
     if (width <= 390) expect(discover!.y + discover!.height).toBeLessThan(explore!.y);
     else expect(explore!.x).toBeGreaterThan(discover!.x);
+    await page.getByRole('button', { name: 'Read all steps', exact: true }).click();
+    await page.locator('.community-task-flow summary').click();
     for (const img of await page.locator('main img').all()) {
       await img.scrollIntoViewIfNeeded();
       await expect(img).toHaveJSProperty('complete', true);
@@ -131,7 +136,7 @@ test('case-study navigation remains available without JavaScript and respects re
 });
 
 
-test('case-study internal links resolve and Final Concept uses original details and reservation screens', async ({ page, request }) => {
+test('case-study internal links resolve and Final Concept uses original details and reservation screens', async ({ page, request, browserName }) => {
   await page.goto(path);
   const hrefs = await page.locator('a[href]').evaluateAll(links => [...new Set(links.map(a => a.getAttribute('href')!))]);
   for (const href of hrefs.filter(href => href.startsWith('/'))) {
@@ -140,20 +145,20 @@ test('case-study internal links resolve and Final Concept uses original details 
     expect(response.status(), href).toBe(200);
     if (url.hash) expect(await response.text(), href).toContain(`id="${url.hash.slice(1)}"`);
   }
-  await expect(page.locator('#concept .screen-sequence img')).toHaveCount(3);
-  await expect(page.locator('#concept .artifact-source')).toHaveText([
-    'Figma · Event Details Page · 214:167', 'Figma · Reserve Spot Page · 214:89', 'Figma · Confirmation Page · 214:4',
+  await expect(page.locator('#concept .journey-panel img')).toHaveCount(4);
+  await expect(page.locator('#concept .journey-source-links a[href^="https:"]')).toHaveText([
+    'Original Figma · 214:237', 'Original Figma · 214:167', 'Original Figma · 214:89', 'Original Figma · 214:4',
   ]);
   for (const width of [320, 390]) {
     await page.setViewportSize({ width, height: 844 });
     await page.goto(path);
-    const count = await page.locator('a[href], button:not([hidden])').count();
+    const count = await page.locator('a[href], button, summary').filter({ visible: true }).count();
     for (let i = 0; i < count; i++) {
-      await page.keyboard.press('Tab');
+      await page.keyboard.press(tabKey(browserName));
       expect(await page.evaluate(() => {
         const el = document.activeElement as HTMLElement;
         const rect = el.getBoundingClientRect();
-        return /^(A|BUTTON|MAIN)$/.test(el.tagName) && getComputedStyle(el).outlineStyle !== 'none' && rect.left >= 0 && rect.right <= innerWidth;
+        return /^(A|BUTTON|MAIN|SUMMARY)$/.test(el.tagName) && getComputedStyle(el).outlineStyle !== 'none' && rect.left >= 0 && rect.right <= innerWidth;
       })).toBe(true);
     }
   }

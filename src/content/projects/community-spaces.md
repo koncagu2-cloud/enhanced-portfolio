@@ -60,11 +60,10 @@ caseStudy:
       sourceNote: Project brief and need statements · Class presentation, pages 2, 4, 6, and 16; original Figma user needs.
     - id: research
       kicker: 02 / Understanding Students
-      title: Make room for connection.
+      title: From community needs to a proposed experience.
       paragraphs:
-        - The team framed two connected needs — a place to study and build relationships, and a way to see which events were available on particular dates. The class research also reported interest in social connection, cultural exchange, accessible features, and music or concert-related entertainment.
-        - The date-specific need connects most directly to the digital concept — event information and registration before a visit. Music and concert interest informed the broader context; the selected screens do not demonstrate a concert-specific feature.
-      sourceNote: Research and user needs · Class presentation, pages 3–4; original Figma user needs.
+        - Our team explored what students and community members wanted from shared spaces, then developed a physical concept and its digital companion. The connections below explain how the documented needs relate to the proposal.
+      sourceNote: Class presentation, pages 3–4, and original user needs and concept statements.
     - id: experience
       kicker: 03 / Designing the Experience
       title: One experience, across place and screen.
@@ -77,18 +76,17 @@ caseStudy:
       kicker: 04 / From Sketches to Screens
       title: Give the journey structure, then character.
       paragraphs:
-        - Early sketches connected login, home, events, signup, and confirmation. Working through this sequence gave the team a structure for the digital experience before adding visual detail.
+        - Early sketches explored login, home, events, signup, and confirmation before the team added visual detail.
         - The mid-fidelity event list organized repeated entries and navigation. The high-fidelity design added event imagery, stronger contrast, and the team’s original color palette while keeping event browsing central. The vibrant direction reflected the welcoming space the team envisioned.
       media: [sketch, comparison]
       sourceNote: Digital sketch and design progression · Class presentation, pages 9 and 11–14; original Figma Events frames, 1:5 and 214:237.
     - id: concept
       kicker: 05 / The Final Concept
-      title: Discover. Explore. Take part.
+      title: From discovering an event to planning a visit.
       paragraphs:
-        - The selected screens show event details, a reservation step, and confirmation. The concept presents event information first, then requirements and availability before booking a place. Confirmation offers a way to return home, keep browsing, or add the event to a calendar.
-        - Together, the spatial sketches, user-need statements, task flow, wireframes, and high-fidelity screens document the team’s physical and digital concept.
+        - Explore four original KIBS interface states. Each highlights information the concept presents before and after registration.
       media: [screens]
-      sourceNote: Original Figma Event Details, Reserve Spot, and Confirmation frames · 214:167, 214:89, and 214:4; final class presentation.
+      sourceNote: Original Figma event list, details, reservation, and confirmation concepts. The pictured controls are not interactive.
     - id: reflection
       kicker: 06 / Reflection & Next Steps
       title: Designing beyond the screen.
