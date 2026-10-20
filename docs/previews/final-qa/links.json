@@ -1,0 +1,442 @@
+{
+  "date": "2026-10-20",
+  "pages": [
+    {
+      "path": "/",
+      "h1": 1,
+      "headingJumps": 0,
+      "robots": "noindex, nofollow"
+    },
+    {
+      "path": "/work/d2l-redesign/",
+      "h1": 1,
+      "headingJumps": 0,
+      "robots": "noindex, nofollow"
+    },
+    {
+      "path": "/work/community-spaces/",
+      "h1": 1,
+      "headingJumps": 0,
+      "robots": "noindex, nofollow"
+    },
+    {
+      "path": "/404.html",
+      "h1": 1,
+      "headingJumps": 0,
+      "robots": "noindex, nofollow"
+    }
+  ],
+  "local": [
+    {
+      "path": "/#main",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/#top",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/#work",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/#about",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/#resume",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/#contact",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/resume/suleyman-koncagul-resume.pdf",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#main",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/student-home.D5YkXvDP.webp",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/instructor-overview.DyyzHxRQ.webp",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#challenge",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#evaluation",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#experience",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#instructor",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#exploration",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#reflection",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#sources",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#journey-requirements",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#journey-file",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#journey-record",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#finding-location",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/assignment-final.BXC_R1mb.webp",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#finding-file",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/file-review.CwWDEWFD.webp",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/submission-history.jDFKiDND.webp",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/student-flow.ND1e3dLh.webp",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#finding-rubric",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/rubric-maker.CWxdMGva.webp",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/instructor-flow.CflgBcfB.webp",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/student-sketch.BzfbIba0.webp",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/instructor-sketch.CdOx4Xz-.webp",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/assignment-earlier.ClNSi6wn.webp",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/d2l-redesign/#top",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/#main",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/#challenge",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/#research",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/#experience",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/#evolution",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/#concept",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/#reflection",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/#journey-discover",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/#journey-reserve",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/space-sketches.C8J0_RHk.webp",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/task-flow.UAJCwapH.png",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/lo-fi-sketch.BdWhLgmm.png",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/events-mid-fi.bu7uF3ZK.png",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/events-hi-fi.CUFZb-U9.png",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/#journey-details",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/#journey-confirmation",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/#need-dates",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/#need-participation",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/event-details-hi-fi.U4nyMzq0.png",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/reserve-spot-hi-fi.D9FAcRcK.png",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/_astro/confirmation-hi-fi.N99sJSBY.png",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/work/community-spaces/#top",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/404.html#main",
+      "status": 200,
+      "anchor": true
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "anchor": true
+    }
+  ],
+  "external": [
+    {
+      "url": "https://github.com/koncagu2-cloud/enhanced-portfolio",
+      "status": 200,
+      "finalUrl": "https://github.com/koncagu2-cloud/enhanced-portfolio"
+    },
+    {
+      "url": "https://www.linkedin.com/in/suleyman-koncagul-b3237b357/",
+      "status": 999,
+      "finalUrl": "https://www.linkedin.com/in/suleyman-koncagul-b3237b357"
+    },
+    {
+      "url": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=16-2",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=16-2"
+    },
+    {
+      "url": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=18-2",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=18-2"
+    },
+    {
+      "url": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=9-6",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=9-6"
+    },
+    {
+      "url": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=554-1123",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=554-1123"
+    },
+    {
+      "url": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=554-1377",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=554-1377"
+    },
+    {
+      "url": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=554-1169",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=554-1169"
+    },
+    {
+      "url": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=274-488",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=274-488"
+    },
+    {
+      "url": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=554-1452",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=554-1452"
+    },
+    {
+      "url": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=0-1",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=0-1"
+    },
+    {
+      "url": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=123-2",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=123-2"
+    },
+    {
+      "url": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=160-2",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=160-2"
+    },
+    {
+      "url": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=554-550",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=554-550"
+    },
+    {
+      "url": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=408-935",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=408-935"
+    },
+    {
+      "url": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=241-193",
+      "status": 200,
+      "finalUrl": "https://www.figma.com/design/piRHnDp4bwoVkKMo1mHSt7/Team--1?node-id=241-193"
+    },
+    {
+      "url": "https://www.figma.com/design/pWjqzjZD2HgayCk6pQg3Zk/Wireframes?node-id=214-237",
+      "status": 403,
+      "finalUrl": "https://www.figma.com/design/pWjqzjZD2HgayCk6pQg3Zk/Wireframes?node-id=214-237"
+    },
+    {
+      "url": "https://www.figma.com/design/pWjqzjZD2HgayCk6pQg3Zk/Wireframes?node-id=214-167",
+      "status": 403,
+      "finalUrl": "https://www.figma.com/design/pWjqzjZD2HgayCk6pQg3Zk/Wireframes?node-id=214-167"
+    },
+    {
+      "url": "https://www.figma.com/design/pWjqzjZD2HgayCk6pQg3Zk/Wireframes?node-id=214-89",
+      "status": 403,
+      "finalUrl": "https://www.figma.com/design/pWjqzjZD2HgayCk6pQg3Zk/Wireframes?node-id=214-89"
+    },
+    {
+      "url": "https://www.figma.com/design/pWjqzjZD2HgayCk6pQg3Zk/Wireframes?node-id=214-4",
+      "status": 403,
+      "finalUrl": "https://www.figma.com/design/pWjqzjZD2HgayCk6pQg3Zk/Wireframes?node-id=214-4"
+    },
+    {
+      "url": "https://www.figma.com/design/pWjqzjZD2HgayCk6pQg3Zk/Wireframes?node-id=154-64",
+      "status": 403,
+      "finalUrl": "https://www.figma.com/design/pWjqzjZD2HgayCk6pQg3Zk/Wireframes?node-id=154-64"
+    },
+    {
+      "url": "https://www.figma.com/design/STtzkQ9AyK3krzZihxnXxt/User-Needs---Concept-Statements?node-id=0-1",
+      "status": 403,
+      "finalUrl": "https://www.figma.com/design/STtzkQ9AyK3krzZihxnXxt/User-Needs---Concept-Statements?node-id=0-1"
+    }
+  ],
+  "nonHttp": [
+    "mailto:koncagusuleyman@gmail.com"
+  ],
+  "errors": []
+}

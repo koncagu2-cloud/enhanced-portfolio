@@ -1,3 +1,4 @@
+import { tabKey } from './keyboard';
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
@@ -27,9 +28,9 @@ test('homepage feature leads to the source-backed collaborative review case stud
   expect((await request.get('/work/pure-michigan/')).status()).toBe(404);
 });
 
-test('case-study anchors, keyboard skip link, and return navigation work', async ({ page }) => {
+test('case-study anchors, keyboard skip link, and return navigation work', async ({ page, browserName }) => {
   await page.goto(path);
-  await page.keyboard.press('Tab');
+  await page.keyboard.press(tabKey(browserName));
   await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused();
   await page.keyboard.press('Enter');
   await expect(page.locator('main')).toBeFocused();
@@ -135,7 +136,7 @@ test('case-study navigation remains available without JavaScript and respects re
 });
 
 
-test('case-study internal links resolve and Final Concept uses original details and reservation screens', async ({ page, request }) => {
+test('case-study internal links resolve and Final Concept uses original details and reservation screens', async ({ page, request, browserName }) => {
   await page.goto(path);
   const hrefs = await page.locator('a[href]').evaluateAll(links => [...new Set(links.map(a => a.getAttribute('href')!))]);
   for (const href of hrefs.filter(href => href.startsWith('/'))) {
@@ -153,7 +154,7 @@ test('case-study internal links resolve and Final Concept uses original details 
     await page.goto(path);
     const count = await page.locator('a[href], button, summary').filter({ visible: true }).count();
     for (let i = 0; i < count; i++) {
-      await page.keyboard.press('Tab');
+      await page.keyboard.press(tabKey(browserName));
       expect(await page.evaluate(() => {
         const el = document.activeElement as HTMLElement;
         const rect = el.getBoundingClientRect();

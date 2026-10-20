@@ -1,3 +1,4 @@
+import { tabKey } from './keyboard';
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
@@ -76,11 +77,11 @@ test('D2L responsive compositions and full-page review captures', async ({ page 
   }
 });
 
-test('D2L keyboard focus, chapter anchors, and mobile traversal work', async ({ page }) => {
+test('D2L keyboard focus, chapter anchors, and mobile traversal work', async ({ page, browserName }) => {
   for (const width of [1440, 390, 320]) {
     await page.setViewportSize({ width, height: 844 });
     await page.goto(path);
-    await page.keyboard.press('Tab');
+    await page.keyboard.press(tabKey(browserName));
     await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused();
     await page.keyboard.press('Enter');
     await expect(page.locator('main')).toBeFocused();
@@ -94,7 +95,7 @@ test('D2L keyboard focus, chapter anchors, and mobile traversal work', async ({ 
     await page.goto(path);
     const count = await page.locator('a[href], button, summary').filter({ visible: true }).count();
     for (let i = 0; i < count; i++) {
-      await page.keyboard.press('Tab');
+      await page.keyboard.press(tabKey(browserName));
       expect(await page.evaluate(() => {
         const node = document.activeElement as HTMLElement;
         const rect = node.getBoundingClientRect();
